@@ -1,0 +1,169 @@
+\documentclass[pdf,table]{beamer}
+\usepackage{graphicx,hyperref,pdfpages}
+\usepackage{tikz}
+\usepackage{textpos}
+\usepackage{longtable}
+\usepackage{color}
+\usepackage{listings}
+\usepackage{color}
+\usepackage[style=numeric,backend=biber]{biblatex}
+%
+\usetikzlibrary{arrows}
+\usetikzlibrary{positioning,chains,fit,shapes,calc}
+\usetikzlibrary{mindmap}
+\usetikzlibrary{shapes.multipart}
+\usetikzlibrary{decorations.text}
+%
+\addbibresource{../CST4025.bib}
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+%
+\input{../lst}
+\input{../tikset}
+\input{../../definitions}
+%
+\mode<presentation>{
+\usetheme{Madrid}
+\usecolortheme{beaver}
+}
+%
+\newcommand{\theweek}{12}
+\renewcommand{\theequation}{\theweek.\arabic{equation}}
+
+\title[\moduleCode:L\theweek]{\moduleTitle \\ Week: \theweek \\ Title: Presentation} 
+\institute[]{\includegraphics[scale=0.25]{../../../logo/mdxSmall} \\ Middlesex University, \\Dept. of Computer Science, \\London}
+\author[\textcopyright \email]{\moduleLeader}
+\date{\today}
+
+
+
+
+\begin{document}
+	\begin{frame}
+		\titlepage
+	\end{frame}
+
+
+\addtobeamertemplate{frametitle}{}{%
+\begin{textblock*}{100mm}(.94\textwidth,-0.85cm)
+\includegraphics[scale=0.1]{../../../logo/transparent}
+\end{textblock*}}
+
+	\begin{frame}{Lecture Objectives}
+		\begin{block}{Skills}
+				How to present
+		\end{block}
+	\end{frame}
+
+
+\begin{frame}{Timing}
+	\begin{itemize}
+		\item Presentation is for 5 minutes
+		\item Keep to time and be prepared
+		\item Know your content 
+		\item 7-10 slides
+			\begin{enumerate}
+				\item Introduction
+				\item Use Case
+				\item Data Model
+				\item ACL
+				\item Node.js
+				\item Blockchain example
+				\item Summary
+			\end{enumerate}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Style}
+	\begin{block}
+		``Fashions fade, style is eternal''\\
+		Yves Saint-Laurent
+	\end{block}
+	\begin{itemize}
+		\item I cannot teach style
+		\item Large fonts
+		\item Numbered slides
+		\item Module Number
+		\item Name
+		\item Keep it Simple
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Style}
+	\begin{block}
+		``Fashions fade, style is eternal''\\
+		Yves Saint-Laurent
+	\end{block}
+	\begin{itemize}
+		\item I cannot teach style
+		\item Large fonts
+		\item Numbered slides
+		\item Module Number
+		\item Name
+		\item Keep it Simple
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Template}
+	\begin{itemize}
+		\item Comply 
+		\item Very useful
+		\item Keeps consistency
+		\item Lightens cognitive burden
+		\item Allows us to concentrate on content
+		\item Figures need to be clear
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Body Language}
+	\begin{itemize}
+		\item Don't read from slides
+		\item Read from notes
+		\item Time and prepare
+		\item Face forward
+		\item Eye contact
+		\item Don't stand in front of slides
+		\item Be audible
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Summary}
+	\begin{itemize}
+		\item Presentation
+		\item Know it 
+		\item Body language
+		\item Prepare
+	\end{itemize}
+\end{frame}
+
+
+
+%\begin{frame}{Enumerator Types}
+%	\begin{columns}[T]
+%		\begin{column}{0.48\textwidth}
+%			\begin{lstlisting}
+%			\end{lstlisting}
+%		\end{column}
+%		\begin{column}{0.48\textwidth}
+%			{\bf XXX}
+%		\end{column}
+%	\end{columns}	
+%\end{frame}
+%
+%
+
+%\begin{frame}{X}
+%	\begin{columns}[T]
+%		\begin{column}{0.48\textwidth}
+%			\begin{itemize}
+%				\item XXX 
+%			\end{itemize}
+%		\end{column}
+%		\begin{column}{0.48\textwidth}
+%			{\bf XXX}
+%		\end{column}
+%	\end{columns}	
+%\end{frame}
+
+\end{document}
