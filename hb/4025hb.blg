@@ -1,0 +1,79 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: 4025hb.aux
+The style file: plain.bst
+Database file #1: ../lc/CST4025.bib
+I was expecting a `{' or a `('---line 6 of file ../lc/CST4025.bib
+ : 
+ : % Blockchain Bibliography
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 17 of file ../lc/CST4025.bib
+ : 
+ : %  booktitle  ={Available at http://referaat. cs. utwente. nl/conference/22/paper/7473/preventingthe-51-attack-astochastic-analysis-of-two-phase-proof-of-work-in-bitcoin. pdf},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 65 of file ../lc/CST4025.bib
+ :  
+ :  %howpublished = {\url{https://www.hyperledger.org/wp-content/uploads/2017/08/HyperLedger_Arch_WG_Paper_1_Consensus.pdf}},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 72 of file ../lc/CST4025.bib
+ :  
+ :  %%howpublished = {\url{https://www.hyperledger.org/wp-content/uploads/2018/04/Hyperledger_Arch_WG_Paper_2_SmartContracts.pdf}},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--to sort, need author or key in hyperledger:1
+Warning--to sort, need author or key in hyperledger:2
+Warning--empty journal in sha1
+Warning--empty booktitle in bastiaan2015preventing
+Warning--empty year in bastiaan2015preventing
+Warning--can't use both author and editor fields in jahankhani:2019a
+Warning--empty chapter and pages in mitchell:2019a
+Warning--empty volume in mitchell:2019a's crossref of jahankhani:2019a
+Warning--need key or journal for mitchell:2019c to crossref jahankhani:2019c
+Warning--empty journal in mitchell:2019b
+Warning--empty journal in nakamoto2008bitcoin
+Warning--empty journal in rivest:md5
+You've used 25 entries,
+            2118 wiz_defined-function locations,
+            618 strings with 7563 characters,
+and the built_in function-call counts, 7172 in all, are:
+= -- 678
+> -- 340
+< -- 5
++ -- 138
+- -- 110
+* -- 441
+:= -- 1202
+add.period$ -- 73
+call.type$ -- 25
+change.case$ -- 125
+chr.to.int$ -- 0
+cite$ -- 37
+duplicate$ -- 294
+empty$ -- 579
+format.name$ -- 111
+if$ -- 1498
+int.to.chr$ -- 0
+int.to.str$ -- 25
+missing$ -- 26
+newline$ -- 124
+num.names$ -- 48
+pop$ -- 176
+preamble$ -- 1
+purify$ -- 104
+quote$ -- 0
+skip$ -- 214
+stack$ -- 0
+substring$ -- 304
+swap$ -- 53
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 88
+warning$ -- 12
+while$ -- 61
+width$ -- 27
+write$ -- 249
+(There were 4 error messages)

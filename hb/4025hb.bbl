@@ -1,0 +1,138 @@
+\begin{thebibliography}{10}
+
+\bibitem{hyperledger:1}
+Hyperledger architecture, volume 1, 2017.
+
+\bibitem{hyperledger:2}
+Hyperledger architecture, volume 2, 2018.
+
+\bibitem{sha1}
+Federal Information Processing Standards~(FIPS) 180-1.
+\newblock Secure hash standard.
+\newblock 1996.
+
+\bibitem{bahsoun2015making}
+Jean-Paul Bahsoun, Rachid Guerraoui, and Ali Shoker.
+\newblock Making bft protocols really adaptive.
+\newblock In {\em 2015 IEEE International Parallel and Distributed Processing
+  Symposium}, pages 904--913. IEEE, 2015.
+
+\bibitem{bastiaan2015preventing}
+Martijn Bastiaan.
+\newblock Preventing the 51\%-attack: a stochastic analysis of two phase proof
+  of work in bitcoin.
+
+\bibitem{castro1999practical}
+Miguel Castro, Barbara Liskov, et~al.
+\newblock Practical byzantine fault tolerance.
+\newblock In {\em OSDI}, volume~99, pages 173--186, 1999.
+
+\bibitem{ferraiolo2001proposed}
+David~F Ferraiolo, Ravi Sandhu, Serban Gavrila, D~Richard Kuhn, and Ramaswamy
+  Chandramouli.
+\newblock Proposed {NIST} standard for role-based access control.
+\newblock {\em {ACM Transactions on Information and System Security (TISSEC)}},
+  4(3):224--274, 2001.
+
+\bibitem{hyperledger:gaur2018}
+Nitin Gaur, Luc Desrosiers, Petr Novotny, Venkatraman Ramakrishna, Anthony
+  O'Dowd, and Salman~A. Baset.
+\newblock {\em Hands-on Blockchain with Hyperledger: Building Decentralised
+  Applications with Hyperledger Fabric and Composer}.
+\newblock Packt, 2018.
+
+\bibitem{jahankhani:2019c}
+Hamid Jahankhani, editor.
+\newblock {\em Cyber Security Practitioner's Guide}.
+\newblock World Scientific, 2019.
+
+\bibitem{lamport1982byzantine}
+Leslie Lamport, Robert Shostak, and Marshall Pease.
+\newblock The byzantine generals problem.
+\newblock {\em ACM Transactions on Programming Languages and Systems (TOPLAS)},
+  4(3):382--401, 1982.
+
+\bibitem{liskov:88}
+B.~Liskov and L.~Shrira.
+\newblock Promises: Linguistic support for efficient asynchronous procedure
+  calls in distributed systems.
+\newblock In {\em Int. Conf. on Programming Language Design and Implementation
+  (SIGPLAN'88)}, pages 260\--267, 1988.
+
+\bibitem{mead:2018}
+A.~Mead.
+\newblock {\em Learning Node.js Development}.
+\newblock Packt, 2018.
+
+\bibitem{jahankhani:2019a}
+I.~Mitchell and S.~Hara.
+\newblock {\em {Blockchain and Clinical Trial - Securing Patient Data}}.
+\newblock Advanced Sciences and Technologies for Security Applications.
+  Springer, 2019.
+
+\bibitem{mitchell:2019a}
+I.~Mitchell and S.~Hara.
+\newblock {\em {BMAR} - blockchain for medication administration records}.
+\newblock In Jahankhani \cite{jahankhani:2019a}, 2019.
+
+\bibitem{mitchell:2019c}
+I.~Mitchell, S.~Hara, H.~Jahankhani, and D.~Neilson.
+\newblock Blockchain of custody, boc.
+\newblock  \cite{jahankhani:2019c}.
+
+\bibitem{mitchell:2019b}
+I.~Mitchell, M.~Sheriff, and S.~Hara.
+\newblock {DappER: Decentralised Application for Exam Reviews}.
+\newblock 2019.
+
+\bibitem{nakamoto2008bitcoin}
+Satoshi Nakamoto.
+\newblock Bitcoin: A peer-to-peer electronic cash system.
+\newblock 2008.
+
+\bibitem{nguyen2018survey}
+Giang-Truong Nguyen and Kyungbaek Kim.
+\newblock A survey about consensus algorithms used in blockchain.
+\newblock {\em Journal of Information processing systems}, 14(1), 2018.
+
+\bibitem{parker:2015}
+D.~Parker.
+\newblock {\em Javascript with Promises}.
+\newblock {O`Reilly}, 1 edition, 2015.
+
+\bibitem{pease1980reaching}
+Marshall Pease, Robert Shostak, and Leslie Lamport.
+\newblock Reaching agreement in the presence of faults.
+\newblock {\em Journal of the ACM (JACM)}, 27(2):228--234, 1980.
+
+\bibitem{rivest:md5}
+R.L. Rivest.
+\newblock The md5 message-digest algorithm, request for comments (rfc1320).
+\newblock 1992.
+
+\bibitem{rogaway:shrimpton}
+Rogaway and Shrimpton.
+\newblock Cryptographic hash-function basics: Definitions, implications, and
+  separations for preimage resistance, second-preimage resistance, and
+  collision resistance.
+\newblock {\em LNCS Software Encryption}, 2004.
+
+\bibitem{SWDGE:v3}
+{Scientific Working Group on Digital Evidence (SWDGE)}.
+\newblock Model standard operation procedures for computer forensics (ver. 3).
+\newblock \url{https://www.swgde.org/}.
+\newblock [Accessed June 2016].
+
+\bibitem{thakkar2018performance}
+Parth Thakkar, Senthil Nathan, and Balaji Vishwanathan.
+\newblock Performance benchmarking and optimizing hyperledger fabric blockchain
+  platform.
+\newblock {\em arXiv preprint arXiv:1805.11390}, 2018.
+
+\bibitem{yaga2018blockchain}
+Dylan Yaga, Peter Mell, Nik Roby, and Karen Scarfone.
+\newblock Blockchain technology overview.
+\newblock Technical report, National Institute of Standards and Technology,
+  2018.
+
+\end{thebibliography}
