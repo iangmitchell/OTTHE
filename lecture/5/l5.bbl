@@ -1,0 +1,103 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{liskov:88}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=b1494ebac3e3ba9c4b5cdfdc27462d1a}{%
+           family={Liskov},
+           familyi={L\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=875a6cae6164ec77fccc69a4502586f9}{%
+           family={Shrira},
+           familyi={S\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{cbfc00bb592b5b6f862840135b82a099}
+      \strng{fullhash}{cbfc00bb592b5b6f862840135b82a099}
+      \strng{bibnamehash}{cbfc00bb592b5b6f862840135b82a099}
+      \strng{authorbibnamehash}{cbfc00bb592b5b6f862840135b82a099}
+      \strng{authornamehash}{cbfc00bb592b5b6f862840135b82a099}
+      \strng{authorfullhash}{cbfc00bb592b5b6f862840135b82a099}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Int. Conf. on Programming Language Design and Implementation (SIGPLAN'88)}
+      \field{title}{Promises: Linguistic Support for Efficient Asynchronous Procedure Calls in Distributed Systems}
+      \field{year}{1988}
+      \field{pages}{260\bibrangedash 267}
+      \range{pages}{8}
+    \endentry
+    \entry{mead:2018}{book}{}
+      \name{author}{1}{}{%
+        {{hash=fbd2d4647f904146d258166805e401e0}{%
+           family={Mead},
+           familyi={M\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Packt}%
+      }
+      \strng{namehash}{fbd2d4647f904146d258166805e401e0}
+      \strng{fullhash}{fbd2d4647f904146d258166805e401e0}
+      \strng{bibnamehash}{fbd2d4647f904146d258166805e401e0}
+      \strng{authorbibnamehash}{fbd2d4647f904146d258166805e401e0}
+      \strng{authornamehash}{fbd2d4647f904146d258166805e401e0}
+      \strng{authorfullhash}{fbd2d4647f904146d258166805e401e0}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Learning Node.js Development}
+      \field{year}{2018}
+    \endentry
+    \entry{parker:2015}{book}{}
+      \name{author}{1}{}{%
+        {{hash=19d29e5033a4aab5a83e8abb4960a28f}{%
+           family={Parker},
+           familyi={P\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {O`Reilly}%
+      }
+      \strng{namehash}{19d29e5033a4aab5a83e8abb4960a28f}
+      \strng{fullhash}{19d29e5033a4aab5a83e8abb4960a28f}
+      \strng{bibnamehash}{19d29e5033a4aab5a83e8abb4960a28f}
+      \strng{authorbibnamehash}{19d29e5033a4aab5a83e8abb4960a28f}
+      \strng{authornamehash}{19d29e5033a4aab5a83e8abb4960a28f}
+      \strng{authorfullhash}{19d29e5033a4aab5a83e8abb4960a28f}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{title}{Javascript with Promises}
+      \field{year}{2015}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

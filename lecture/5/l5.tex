@@ -1,0 +1,588 @@
+\documentclass[pdf,table]{beamer}
+\usepackage{graphicx,hyperref,pdfpages}
+\usepackage{tikz}
+\usepackage{textpos}
+\usepackage{longtable}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{listings}
+\usepackage{color}
+\usepackage[style=numeric,backend=biber]{biblatex}
+%
+\usetikzlibrary{arrows}
+\usetikzlibrary{positioning,chains,fit,shapes,calc}
+\usetikzlibrary{mindmap}
+\usetikzlibrary{shapes.multipart}
+\usetikzlibrary{decorations.text}
+%
+\addbibresource{../CST4025.bib}
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+%
+\input{../lst}
+\input{../tikset}
+\input{../../definitions}
+%
+\mode<presentation>{
+\usetheme{Madrid}
+\usecolortheme{beaver}
+}
+%
+\newcommand{\theweek}{5}
+\renewcommand{\theequation}{\theweek.\arabic{equation}}
+
+\title[\moduleCode:L\theweek]{\moduleTitle \\ Week: \theweek \\ Title: Node.js} 
+\institute[]{\includegraphics[scale=0.25]{../../../logo/mdxSmall} \\ Middlesex University, \\Dept. of Computer Science, \\London}
+\author[\textcopyright \email]{\moduleLeader}
+\date{\today}
+
+
+
+
+\begin{document}
+	\begin{frame}
+		\titlepage
+	\end{frame}
+
+
+\addtobeamertemplate{frametitle}{}{%
+\begin{textblock*}{100mm}(.94\textwidth,-0.85cm)
+\includegraphics[scale=0.1]{../../../logo/transparent}
+\end{textblock*}}
+
+\begin{frame}{Aims \& Objectives}
+	\begin{itemize}
+		\item Overview of Javascript
+		\item Overview of Nodejs \cite{mead:2018}
+		\item A/Synchronous Programming
+		\item Examples
+	\end{itemize}
+\end{frame}	
+
+
+\begin{frame}{Node.js}{An Introduction}
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{itemize}
+				\item Client-side script
+					\begin{itemize}
+						\item GUI
+						\item Web
+						\item Mobile
+						\item JS, CSS, HTML
+					\end{itemize}
+				\item Server-side script %simplistic overview
+					\begin{itemize}
+						\item Web
+						\item REST
+						\item HTTP
+						\item Ajax
+						\item Messaging
+						\item lang: ASP.Net, Java, PHP
+						\item tools: MySQL
+					\end{itemize}
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			{\bf Middleware}
+			\begin{itemize}
+				\item I/O-bound
+				\item Server-side have to wait
+				\item input query
+				\item output result
+				\item all processes halted
+				\item Distributed
+				\item Node.js
+			\end{itemize}
+		\end{column}
+	\end{columns}	
+\end{frame}
+
+\begin{frame}{Node.js}{Application}
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Felix Geisend\o{"}rfer}
+				``Everything runs in parallel except your code''
+			\end{block}
+			\begin{itemize}
+				\item Events
+				\item Callbacks
+				\item Listening
+				\item Create callback functions that get executed in response to listening to events
+				\item Non-blocking %more on https://nodejs.org/en/docs/guides/blocking-vs-non-blocking/ & p34 mead
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{tikzpicture}
+				\fill[even odd rule, mymagenta] circle(2.0);
+				\node at (0,0) [font =\mytextstyle, color=white, align=center]{Event Loop};
+				\node at (0,3) [font =\mytextstyle, color=black, align=center]{Load Program};
+				\arcarrow{85}{3}{Something to do?}
+				\arcarrow{270}{357} {Wait for something}
+				\arcarrow{182}{269}{Execute Callbacks}
+				\arcarrow{176}{96}{Exit, unless more to do}
+			\end{tikzpicture}
+		\end{column}
+	\end{columns}	
+\end{frame}
+
+
+
+\begin{frame}{Node.js}
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			{\bf Single-Threaded and Highly Parallel}
+			\begin{itemize}
+				\item Run code %p7 wilson
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			{\bf Backwardism}
+			\begin{itemize}
+				\item
+			\end{itemize}
+			{\bf Why?}
+			\begin{itemize}
+				\item Composer
+				\item Asynchronous 
+				\item Non-blocking
+				\item Single-Threaded
+				\item Event-based
+			\end{itemize}
+		\end{column}
+	\end{columns}	
+\end{frame}
+
+
+\begin{frame}{Synchronous}
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{itemize}
+				\item Sequence
+			\end{itemize}
+			\begin{block}{Output}<2->
+				Start \\ End
+			\end{block}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			{\bf Listing}
+			\lstinputlisting[language=JavaScript]{lecture/5/ex1.js}
+		\end{column}
+	\end{columns}	
+\end{frame}
+
+\begin{frame}{Asynchronous}%p261 mead
+	\begin{columns}[T]
+		\begin{column}{0.38\textwidth}
+			\begin{itemize}
+				\item {\tt SetTimeout({\it fn, ms})}
+				\item Exec. fn after ms
+				\item Order $\ne$ Code
+				\item Non-blocking, continue to execute program
+			\end{itemize}
+			\begin{block}<2->{Output}
+				Start \\ End \\ Callback
+			\end{block}
+		\end{column}
+		\begin{column}{0.58\textwidth}
+			{\bf Listing}
+			\lstinputlisting[language=JavaScript]{lecture/5/ex2.js}
+		\end{column}
+	\end{columns}	
+\end{frame}
+
+\begin{frame}{Asynchronous}%p262 mead
+	\begin{columns}[T]
+		\begin{column}{0.38\textwidth}
+			\begin{block}<2->{Output}
+				Start \\ End \\ 2nd Callback \\ 1st Callback
+			\end{block}
+			\begin{itemize}
+				\item Again
+				\item Order $\ne$ Code
+				\item Non-blocking, continue to execute program
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.58\textwidth}
+			{\bf Listing}
+			\lstinputlisting[language=JavaScript]{lecture/5/ex3.js}
+		\end{column}
+	\end{columns}	
+\end{frame}
+
+\begin{frame}{Arrow Function: No Parameter}{Syntax}
+	\begin{tikzpicture}
+		\node at (2,6) [code] (1){()};
+		\node at (4,6) [code] (2){$=>$};
+		\node at (6,6) [code] (3){\{statements\}};
+		\node [rectangle, below=of 1] (4){No parameters};
+		\node [rectangle, below=of 2] (5){Arrow};
+		\node [rectangle, below=of 3] (6){Code};
+		%
+		\draw[Dedge] (4) -- (1);
+		\draw[Dedge] (5) -- (2);
+		\draw[Dedge] (6) -- (3);
+	\end{tikzpicture}
+\end{frame}
+
+
+\begin{frame}{Arrow Function: Single Parameter}{Syntax}
+	\begin{tikzpicture}
+		\node at (2,6) [code] (1){(p1)};
+		\node at (4,6) [code] (2){$=>$};
+		\node at (6,6) [code] (3){\{statements\}};
+		\node [rectangle, below=of 1] (4){Parameter};
+		\node [rectangle, below=of 2] (5){Arrow};
+		\node [rectangle, below=of 3] (6){Code};
+		%
+		\draw[Dedge] (4) -- (1);
+		\draw[Dedge] (5) -- (2);
+		\draw[Dedge] (6) -- (3);
+		
+	\end{tikzpicture}
+\end{frame}
+
+\begin{frame}{Arrow Function: Multiple Parameter}{Syntax}
+	\begin{tikzpicture}
+		\node at (2,6) [code] (1){(p1,p2)};
+		\node at (4,6) [code] (2){$=>$};
+		\node at (6,6) [code] (3){\{statements\}};
+		\node[rectangle, below=of 1] (4){Parameter};
+		\node[rectangle, below=of 2] (5){Arrow};
+		\node[rectangle, below=of 3] (6){Code};
+		%
+		\draw[Dedge] (4) -- (1);
+		\draw[Dedge] (5) -- (2);
+		\draw[Dedge] (6) -- (3);
+	\end{tikzpicture}
+\end{frame}
+
+\begin{frame}{Arrow Functions}{Comparison}
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			{\bf Listing without}
+			\lstinputlisting[language=JavaScript]{withoutArrowFn.js}	
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			{\bf Listing with}
+			\lstinputlisting[language=JavaScript]{withArrowFn.js}
+		\end{column}
+	\end{columns}	
+\end{frame}
+%https://codeburst.io/javascript-arrow-functions-for-beginners-926947fc0cdc
+
+
+\begin{frame}{Arrow Functions}{Benefits}
+	\begin{itemize}
+		\item Shorter
+		\item Bind {\tt this} lexically
+		\item 
+	\end{itemize}
+\end{frame}
+\begin{frame}{Anonymous Callback}
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}<1|only@1>{Definition}
+				%When an argument in your function is a function. \\
+				%A function is passed as an argument.
+				Passing a function as an argument
+			\end{block}
+			\begin{block}<2->{Output}
+				result: 50 \\ result: 15
+			\end{block}
+			\begin{itemize}
+				\item Why?
+				\item Dynamic
+			\end{itemize}
+			
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			{\bf Example}
+			\lstinputlisting[language=JavaScript]{lecture/5/callback1.js}
+		\end{column}
+	\end{columns}	
+\end{frame}
+
+\begin{frame}{Named Callback}
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}<2->{Output}
+				result: 70 \\ result: 17 \\ result: 3
+			\end{block}
+			\begin{itemize}
+				\item Why?
+				\item Dynamic
+				\item trigger automatic updates
+				\item {\tt setInterval(fn,ms)}
+			\end{itemize}
+			
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			{\bf Example}
+			\lstinputlisting[language=JavaScript]{lecture/5/callback2.js}
+		\end{column}
+	\end{columns}	
+\end{frame}
+
+
+
+\begin{frame}{Promises \cite{liskov:88}}
+	\begin{block}{Definition \cite{parker:2015}}
+		A promise is an object that serves as a placeholder for a value. That value is usually the result of an async[hronous] operation....
+		When an async function is called it can immediately return a promise object. Using that object, you can register callbacks that will run when the operation succeeds or an error occurs.
+	\end{block}
+\end{frame}
+
+
+\begin{frame}{Promise States \cite{parker:2015}}
+	\begin{block}{Definitions}
+		\begin{description}
+			\item[Pending:] The operation has not begun or is in progress.
+			\item[Fulfilled:] The operation has completed.
+			\item[Rejected:] The operation could not be completed.
+		\end{description}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Promise States Relationships\cite{parker:2015}}
+	\begin{tikzpicture}
+		\node  at (2,2) [zero] (1){};
+		\node  at (4,2) [vertex] (2){Pending};
+		\node at (8,4)  [vertex] (3){Fulfilled};
+		\node at (8,0)  [vertex] (4){Rejected};
+		%edges
+		\draw[Dedge] (1) -- (2);
+		\draw[Dedge] (2) -- (3);
+		\draw[Dedge] (2) -- (4);
+	\end{tikzpicture}
+	%Analogy:
+	% Girl: Mum, can I have some sweets
+	% Mum: Be a good ri
+\end{frame}
+
+\begin{frame}{Promise Analogy}
+	\begin{description}
+		\item[Child:] Please can I have some sweets?
+		\item[Parent:] I will give you some when you complete your homework
+		\item[Promise Pending]
+		\item[\vdots]
+		\item<2|only@2>[Child:] Can I have some sweets now!
+		\item<2|only@2>[Parent:] Have you completed your homework?
+		\item<2|only@2>[Child:] No.
+		\item<2|only@2>[Parent:] Then you cannot have any sweets.
+		\item<2|only@2>[Promise Rejected]
+		\item<3|only@3>[Child:] Can I have some sweets now?
+		\item<3|only@3>[Parent:] Have you completed your homework?
+		\item<3|only@3>[Child:] Yes.
+		\item<3|only@3>[Parent:] Well done, I will go and get you some.
+		\item<3|only@3>[Promise Pending]
+		\item<3|only@3>[Parent:] They are on the table.
+		\item<3|only@3>[Promise Fulfilled]
+	\end{description}
+\end{frame}
+
+\begin{frame}{Promise States Relationships\cite{parker:2015}}
+	\begin{tikzpicture}
+		\node  at (0,2) [zero] (1){};
+		\node  at (4,2) [vertex] (2){Pending};
+		\node at (8,4)  [vertex] (3){Fulfilled};
+		\node at (8,0)  [vertex] (4){Rejected};
+		%edges
+		\draw[Dedge] (1)  -> node[above]{Request\\Sweets} (2);
+		\draw[Dedge] (2) -> node[above=5pt, rotate around={30:(0,0)}]{Homework\\Completed} (3);
+		\draw[Dedge] (2) -> node[below=5pt, rotate around={-30:(0,0)}]{Homework\\Incomplete} (4);
+		\node[right=of 3] (5){Response\\Sweets};
+		\node[right=of 4] (4){Response\\Nothing};
+	\end{tikzpicture}
+\end{frame}
+
+\begin{frame}[fragile]{Promise Syntax\cite{mead:2018}}%p370 mead
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{itemize}
+				\item<1-> Creation: object
+				\item<2-> Anonymous Arrow Fn
+				\item<3-> Asynchronous
+				\item<4-> Resolve, Reject
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			{\bf Listing}
+			\begin{lstlisting}[language=JavaScript]
+ var somePromise = new promise((resolve,reject)=>{
+ //do asynchronous stuff here
+	 });
+			\end{lstlisting}
+		\end{column}
+	\end{columns}	
+\end{frame}
+
+
+
+
+\begin{frame}{Promise Example}{Resolve}
+	\begin{columns}[T]
+		\begin{column}{0.35\textwidth}
+			\begin{block}{Output}
+				{\tt success: It worked}
+			\end{block}
+		\end{column}
+		\begin{column}{0.55\textwidth}
+			{\bf Listing}
+			\lstinputlisting[language=JavaScript]{promiseResolve.js}
+		\end{column}
+	\end{columns}	
+\end{frame}
+
+\begin{frame}{Promise Example}{Reject}
+	\begin{columns}[T]
+		\begin{column}{0.35\textwidth}
+			\begin{block}{Output}
+				{\tt Failure: It Failed}
+			\end{block}
+		\end{column}
+		\begin{column}{0.55\textwidth}
+			{\bf Listing}
+			\lstinputlisting[language=JavaScript]{promiseReject.js}
+		\end{column}
+	\end{columns}	
+\end{frame}
+
+
+%notes: passing two functions, each with one parameter
+%
+\begin{frame}{Call a Promise}{.then}
+	\begin{columns}[T]
+		\begin{column}{0.35\textwidth}
+			\begin{itemize}
+				\item .then is a callback function 
+					\begin{itemize}
+						\item success
+						\item failure
+						\end{itemize}
+				\item two callback functions
+				\item Reject or Resolve
+				\item Only reject once
+				\item Only resolve once
+				\item Pending for 500ms
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.55\textwidth}
+			{\bf Listing}
+			\lstinputlisting[language=JavaScript,firstline=8,lastline=13,firstnumber=8]{promiseReject.js}
+		\end{column}
+	\end{columns}	
+\end{frame}
+
+%
+% p 378
+\begin{frame}{Return a Promise}{Resolve}
+	\begin{columns}[T]
+		\begin{column}{0.2\textwidth}
+			\begin{block}{Output}
+				sum:109
+			\end{block}
+		\end{column}
+		\begin{column}{0.75\textwidth}
+			{\bf Listing}
+			\lstinputlisting[language=JavaScript]{promiseReturnResolve.js}
+		\end{column}
+	\end{columns}	
+\end{frame}
+
+%
+% p 378
+\begin{frame}{Return a Promise}{Resolve}
+	\begin{columns}[T]
+		\begin{column}{0.20\textwidth}
+			\begin{block}{Output}
+				Error: enter two numbers	
+			\end{block}
+		\end{column}
+		\begin{column}{0.75\textwidth}
+			{\bf Listing}
+			\lstinputlisting[language=JavaScript]{promiseReturnReject.js}
+		\end{column}
+	\end{columns}	
+\end{frame}
+
+% p 378
+\begin{frame}{Promise Chaining \cite{parker:2015}}
+	\begin{columns}[T]
+		\begin{column}{0.20\textwidth}
+			\begin{block}<2->{Output}
+				ABC \\
+				XYZ
+			\end{block}
+		\end{column}
+		\begin{column}{0.75\textwidth}
+			{\bf Listing}
+			\lstinputlisting[language=JavaScript]{promiseChain.js}
+		\end{column}
+	\end{columns}	
+\end{frame}
+
+
+%
+%\begin{frame}{}{}
+%	\begin{columns}[T]
+%	but in the reject example only reject is returned.
+%		\end{column}
+%		\begin{column}{0.48\textwidth}
+%			{\bf Listing}
+%			\lstinputlisting[language=JavaScript]{.js}
+%		\end{column}
+%	\end{columns}	
+%\end{frame}
+
+
+
+%\begin{frame}{}
+%	\begin{columns}[T]
+%		\begin{column}{0.48\textwidth}
+%		\end{column}
+%		\begin{column}{0.48\textwidth}
+%			{\bf XXX}
+%		\end{column}
+%	\end{columns}	
+%\end{frame}
+%
+%
+
+%\begin{frame}{X}
+%	\begin{columns}[T]
+%		\begin{column}{0.48\textwidth}
+%			\begin{itemize}
+%				\item XXX 
+%			\end{itemize}
+%		\end{column}
+%		\begin{column}{0.48\textwidth}
+%			{\bf XXX}
+%		\end{column}
+%	\end{columns}	
+%\end{frame}
+\begin{frame}{Summary}
+	\begin{itemize}
+		\item Promises 
+		\item passing functions as parameters
+		\item Asynchronous code
+		\item Synchronous code
+		\item Promise chaining
+		\item callback hell
+		\item async, await, let
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{References}
+	\printbibliography
+\end{frame}
+	
+\begin{frame}
+	\frametitle{Web Resources}
+	\begin{itemize}
+	\item \url{http://hyperledger.org}
+	\item \url{https://nodejs.org}
+	\end{itemize}
+\end{frame}
+
+\end{document}

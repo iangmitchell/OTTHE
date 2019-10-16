@@ -1,0 +1,19 @@
+\frametitle{Promise Syntax\cite {mead:2018}}
+\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{itemize}
+				\item<1-> Creation: object
+				\item<2-> Anonymous Arrow Fn
+				\item<3-> Asynchronous
+				\item<4-> Resolve, Reject
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			{\bf Listing}
+			\begin{lstlisting}[language=JavaScript]
+ var somePromise = new promise((resolve,reject)=>{
+ //do asynchronous stuff here
+	 });
+			\end{lstlisting}
+		\end{column}
+	\end{columns}

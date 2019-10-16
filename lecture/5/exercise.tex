@@ -1,0 +1,136 @@
+\section{Introduction}
+We need to get organised and know where our code is and how to access it using command line. Some of you will have completed the steps below, so you only need to add the steps you haven't completed. Make sure you have completed all the steps before beginning this exercise:
+\begin{itemize}
+	\item Create a directory on the main volume, say C, named, `\moduleCode'.
+	\item Go to this directory.
+	\item Create sub-directories for each week of the course, say 1,2,3,\ldots,10,11,12
+	\item All today's exercises are to be saved in week \theweek, so go to sub-directory \theweek. 
+	\item Complete each exercise before moving to the next exercise
+	\item Finally, at the end of today's exercise it is recommended you back up all of your work on the cloud or a peripheral device.
+\end{itemize}
+
+
+\section{`Hello, World!' and Node.js}
+Hello, world! is usually the first program you write in a new language. The program's aim is to display the words ``Hello, world!'' in the output display. In node.js, the display output could be several options, however, it is not the Document Object Model, with its ability to access document components, that is of interest. So, we are going to chose the console.log() as our standard output. The console.log() is access in different ways and depends on how you have installed npm, for further installation options and advice see \url{}. Type the code in Fig. \ref{fi:ex51} and execute.
+
+\begin{figure}[t!]
+	\centering
+\lstinputlisting[language=JavaScript,basicstyle=\ttfamily\normalsize]{JavaScriptExercise/ex1.js}
+	\caption{JavaScript code for `Hello, World!' exercise}
+	\label{fi:ex51}
+\end{figure} 
+%execution of node code: obvious, command line and type "node ex1.js"; of course no one has this installed, then cut and paste code in chrome (push ctr+shf+i) console. Similarly for firefox
+
+\newpage
+\section{Arrow Functions}
+Using a display function, `printStr(string)', we want to display a few strings, with a 5000ms delay. Type the following code in Fig.\ref{fi:ex52} and save as `ex2.js'.
+
+Complete the following modifications to your code:
+\begin{itemize}
+	\item Comment your code, explaining and identifying paramets and function calls.
+	\item Once working copy your code to a new file `ex3.js'
+	\item In `ex3.js' add a parameter, `t' to the `printStr' function. Change the function call to `printStr' in the function `printAll'.
+\end{itemize}
+
+\begin{figure}[t!]
+	\centering
+\lstinputlisting[language=JavaScript,basicstyle=\ttfamily\normalsize]{JavaScriptExercise/ex2.js}
+	\caption{JavaScript code for exercise 3}
+	\label{fi:ex52}
+\end{figure}
+
+
+%\begin{figure}\label{fi:ex3}
+%	\centering
+%\lstinputlisting[language=JavaScript,basicstyle=\ttfamily\normalsize,firstline=13,lastline=17,firstnumber=13]{JavaScriptExercise/ex3.js}
+%	\caption{JavaScript code for exercise 3}
+%\end{figure}
+
+\newpage
+\section{Promises}
+The next task is to introduce promises. The first task is to alter the `printStr' function to include a promise. Create a new file, `ex4.js' and complete the code in Fig. \ref{fi:ex54}. %matches promise 6.js
+
+Complete the following modifications to your code:
+\begin{itemize}
+	\item  As in the previous exercise create a function, `printAll()', to display the sequence `A',`B' and `C'. For example, add a function similar to previous examples that completes this task. Then add a call to `printAll()'.
+	\item Create a new function `printAll2()', this function should make 3 calls to `printStr(str,int)'. Each call should be as follows: 
+		\begin{itemize}
+			\item printStr('A',2500); printStr('B',500); printStr('C',25)
+		\end{itemize}
+	\item Create a new function `printAll3()', this function should make the same 3 calls to `printStr(str,int)' as the above function. However, this function should be completed using a promise chain and thus synchronise the output, despite the time delays.
+	\item Finally, add a 'catch' command to the promise chain to potentially catch any errors
+\end{itemize}
+
+
+\begin{figure}[t!]
+	\centering
+\lstinputlisting[language=JavaScript,basicstyle=\ttfamily\normalsize,firstline=1,lastline=10,firstnumber=1]{JavaScriptExercise/ex4.js}
+	\caption{JavaScript code for exercise 4}
+	\label{fi:ex54}
+\end{figure}
+
+\newpage
+\section{Await}
+%Exercise 5 using await command,% matches promise7.js
+Create a new file and add the code in Fig.\ref{fi:ex54}. Using the await command create an asynchronous function `printAll()' that passes the following functions calls and outputs the strings 'A', 'B' and 'C'.
+\begin{itemize}
+	\item printStr('A',2500)
+	\item printStr('B',250)
+	\item printStr('C',25)
+\end{itemize}
+\newpage
+\section{Callback hell}
+%Exercise 6 not using promises, you get a complex callback command. matches promise8.js
+There are reasons not to use callbacks, we like them when they are just at a single level, however for this simple example of outputting three strings we soon see complications arise.
+
+Type the code in Fig.\ref{fi:ex56} and save as `ex6.js' then execute.
+
+Add comments to your code to explain the process of the callback and how the output differs.
+
+\begin{figure}[t!]
+	\centering
+\lstinputlisting[language=JavaScript,basicstyle=\ttfamily\normalsize]{JavaScriptExercise/ex6.js}
+	\caption{JavaScript code for exercise 6}
+	\label{fi:ex56}
+\end{figure}
+
+
+
+\newpage
+\section{Resolve and Promise}
+%Exercise 7 uses promises to avoid the complex callback commands, matches promise9.js
+Let us try to write some code to resolve the problem of using complex callbacks. Essentially, there are two approaches of using the 'await' command and promise chaining. Create a new file, `ex7.js' and enter the code in Fig.\ref{fi:ex57} and then execute. 
+
+Complete the following:
+\begin{itemize}
+	\item Comment the code, identifying parameters, function calls and intentions
+	\item Why does the code not work?
+	\item Identify which line of code you comment out to get this working
+	\item Now uncomment the line and add a function `printAll()' that should complete the same task as function `printAll2()' but uses a promise chain [hint: see previous exercises for help].
+\end{itemize}
+
+\begin{figure}[t!]
+	\centering
+\lstinputlisting[language=JavaScript,basicstyle=\ttfamily\normalsize,firstline=1,lastline=18,firstnumber=1]{JavaScriptExercise/ex7.js}
+	\caption{JavaScript code for exercise 7}
+	\label{fi:ex57}
+\end{figure}
+
+
+\newpage
+\section{Promise, Reject and Catch}			
+Exercise 8 uses promises and reject to verify input. %matches promise10.js.
+Create a new file `ex8.js' and type the code in Fig.\ref{fi:ex58}. Once you have this working complete the following tasks:
+\begin{enumerate}
+	\item Add comments to your code to explain each step and identify function calls and parameters.
+	\item Pass an integer as a parameter in the call to `printStr()' from the `printAll()' function. Does it catch the error?
+	\item Pass an integer as a parameter in the call to `printStr()' from the `printAll2()' function. Does it catch the error?
+	\item Modify the code using try and catch methods and adapt function `printAll2()' to catch the error. Test this and see if it works. 
+\end{enumerate}
+\begin{figure}[t!]
+	\centering
+	\lstinputlisting[language=JavaScript,basicstyle=\ttfamily\normalsize]{JavaScriptExercise/ex8.js}
+	\caption{Exercise 8. Code to test await and chain promises}
+	\label{fi:ex58}
+\end{figure}
+	

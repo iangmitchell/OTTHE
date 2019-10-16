@@ -1,0 +1,15 @@
+[0] Config.pm:302> INFO - This is Biber 2.9
+[0] Config.pm:305> INFO - Logfile is 'l5.blg'
+[32] biber:313> INFO - === Tue Jun 18, 2019, 19:11:21
+[77] Biber.pm:371> INFO - Reading 'l5.bcf'
+[151] Biber.pm:857> INFO - Found 3 citekeys in bib section 0
+[167] Biber.pm:3981> INFO - Processing section 0
+[181] Biber.pm:4154> INFO - Looking for bibtex format file '../CST4025.bib' for section 0
+[183] bibtex.pm:1468> INFO - LaTeX decoding ...
+[210] bibtex.pm:1294> INFO - Found BibTeX data source '../CST4025.bib'
+[237] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[237] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[237] Biber.pm:3809> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[237] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-US'
+[241] bbl.pm:617> INFO - Writing 'l5.bbl' with encoding 'ascii'
+[244] bbl.pm:720> INFO - Output to l5.bbl
