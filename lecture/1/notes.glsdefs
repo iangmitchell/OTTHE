@@ -1,0 +1,120 @@
+\ifglsentryexists{bc}{}%
+{%
+\gls@defglossaryentry{bc}%
+{%
+name={BC},%
+sort={BC},%
+type={main},%
+first={BC},%
+firstplural={BCs},%
+text={BC},%
+plural={BCs},%
+description={Blockchain},%
+descriptionplural={Blockchain},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{rtw}{}%
+{%
+\gls@defglossaryentry{rtw}%
+{%
+name={RTW},%
+sort={RTW},%
+type={main},%
+first={RTW},%
+firstplural={RTWs},%
+text={RTW},%
+plural={RTWs},%
+description={Return to Work},%
+descriptionplural={Return to Work},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{jit}{}%
+{%
+\gls@defglossaryentry{jit}%
+{%
+name={JIT},%
+sort={JIT},%
+type={main},%
+first={JIT},%
+firstplural={JITs},%
+text={JIT},%
+plural={JITs},%
+description={Just in Time},%
+descriptionplural={Just in Time},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{iot}{}%
+{%
+\gls@defglossaryentry{iot}%
+{%
+name={IoT},%
+sort={IoT},%
+type={main},%
+first={IoT},%
+firstplural={IoTs},%
+text={IoT},%
+plural={IoTs},%
+description={Internet of Things},%
+descriptionplural={Internet of Things},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%

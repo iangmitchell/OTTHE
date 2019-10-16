@@ -1,0 +1,133 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{hyperledger:1}{misc}{}
+      \list{institution}{1}{%
+        {The Linux Foundation}%
+      }
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labeltitlesource}{title}
+      \field{title}{Hyperledger Architecture, Volume 1}
+      \field{year}{2017}
+    \endentry
+    \entry{hyperledger:2}{misc}{}
+      \list{institution}{1}{%
+        {The Linux Foundation}%
+      }
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labeltitlesource}{title}
+      \field{title}{Hyperledger Architecture, Volume 2}
+      \field{year}{2018}
+    \endentry
+    \entry{nakamoto2008bitcoin}{article}{}
+      \name{author}{1}{}{%
+        {{hash=1977190f018b398e43ede3de043de8ea}{%
+           family={Nakamoto},
+           familyi={N\bibinitperiod},
+           given={Satoshi},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{1977190f018b398e43ede3de043de8ea}
+      \strng{fullhash}{1977190f018b398e43ede3de043de8ea}
+      \strng{bibnamehash}{1977190f018b398e43ede3de043de8ea}
+      \strng{authorbibnamehash}{1977190f018b398e43ede3de043de8ea}
+      \strng{authornamehash}{1977190f018b398e43ede3de043de8ea}
+      \strng{authorfullhash}{1977190f018b398e43ede3de043de8ea}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Bitcoin: A peer-to-peer electronic cash system}
+      \field{year}{2008}
+    \endentry
+    \entry{north1991institutions}{article}{}
+      \name{author}{1}{}{%
+        {{hash=8e6a1c3de9348636587cf619690b194b}{%
+           family={North},
+           familyi={N\bibinitperiod},
+           given={Douglass\bibnamedelima C},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{8e6a1c3de9348636587cf619690b194b}
+      \strng{fullhash}{8e6a1c3de9348636587cf619690b194b}
+      \strng{bibnamehash}{8e6a1c3de9348636587cf619690b194b}
+      \strng{authorbibnamehash}{8e6a1c3de9348636587cf619690b194b}
+      \strng{authornamehash}{8e6a1c3de9348636587cf619690b194b}
+      \strng{authorfullhash}{8e6a1c3de9348636587cf619690b194b}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of economic perspectives}
+      \field{number}{1}
+      \field{title}{Institutions}
+      \field{volume}{5}
+      \field{year}{1991}
+      \field{pages}{97\bibrangedash 112}
+      \range{pages}{16}
+    \endentry
+    \entry{yaga2018blockchain}{report}{}
+      \name{author}{4}{}{%
+        {{hash=bdfe2c2ab6cb98ded524796ccf8b5c9c}{%
+           family={Yaga},
+           familyi={Y\bibinitperiod},
+           given={Dylan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=eac098e5805fbc204d757a7083c69ac6}{%
+           family={Mell},
+           familyi={M\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=ca5a5af1ce1f9d4887ffa1f2cdc801eb}{%
+           family={Roby},
+           familyi={R\bibinitperiod},
+           given={Nik},
+           giveni={N\bibinitperiod}}}%
+        {{hash=6ea98e3682d33480471e822adaacdc41}{%
+           family={Scarfone},
+           familyi={S\bibinitperiod},
+           given={Karen},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{institution}{2}{%
+        {National Institute of Standards}%
+        {Technology}%
+      }
+      \strng{namehash}{af30e963a928161d42a5c7355a76131d}
+      \strng{fullhash}{f29374f4f9bad74e182034412013c00c}
+      \strng{bibnamehash}{af30e963a928161d42a5c7355a76131d}
+      \strng{authorbibnamehash}{af30e963a928161d42a5c7355a76131d}
+      \strng{authornamehash}{af30e963a928161d42a5c7355a76131d}
+      \strng{authorfullhash}{f29374f4f9bad74e182034412013c00c}
+      \field{sortinit}{Y}
+      \field{sortinithash}{b8d711a035f7be9840c721c82920477e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Blockchain technology overview}
+      \field{type}{techreport}
+      \field{year}{2018}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

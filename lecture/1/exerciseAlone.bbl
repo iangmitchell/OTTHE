@@ -1,0 +1,26 @@
+\begin{thebibliography}{1}
+
+\bibitem{sha1}
+Federal Information Processing Standards~(FIPS) 180-1.
+\newblock Secure hash standard.
+\newblock 1996.
+
+\bibitem{rivest:md5}
+R.L. Rivest.
+\newblock The md5 message-digest algorithm, request for comments (rfc1320).
+\newblock 1992.
+
+\bibitem{rogaway:shrimpton}
+Rogaway and Shrimpton.
+\newblock Cryptographic hash-function basics: Definitions, implications, and
+  separations for preimage resistance, second-preimage resistance, and
+  collision resistance.
+\newblock {\em LNCS Software Encryption}, 2004.
+
+\bibitem{yaga2018blockchain}
+Dylan Yaga, Peter Mell, Nik Roby, and Karen Scarfone.
+\newblock Blockchain technology overview.
+\newblock Technical report, National Institute of Standards and Technology,
+  2018.
+
+\end{thebibliography}
