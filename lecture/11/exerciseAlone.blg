@@ -1,0 +1,73 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: exerciseAlone.aux
+The style file: plain.bst
+Database file #1: ../CST4025.bib.bib
+I was expecting a `{' or a `('---line 6 of file ../CST4025.bib.bib
+ : 
+ : % Blockchain Bibliography
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 26 of file ../CST4025.bib.bib
+ : 
+ : %  booktitle  ={Available at http://referaat. cs. utwente. nl/conference/22/paper/7473/preventingthe-51-attack-astochastic-analysis-of-two-phase-proof-of-work-in-bitcoin. pdf},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 138 of file ../CST4025.bib.bib
+ :  
+ :  %howpublished = {\url{https://www.hyperledger.org/wp-content/uploads/2017/08/HyperLedger_Arch_WG_Paper_1_Consensus.pdf}},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 145 of file ../CST4025.bib.bib
+ :  
+ :  %%howpublished = {\url{https://www.hyperledger.org/wp-content/uploads/2018/04/Hyperledger_Arch_WG_Paper_2_SmartContracts.pdf}},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 155 of file ../CST4025.bib.bib
+ :  
+ :  %edition  = {1st},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty journal in mitchell:2019b
+You've used 1 entry,
+            2118 wiz_defined-function locations,
+            503 strings with 4178 characters,
+and the built_in function-call counts, 290 in all, are:
+= -- 24
+> -- 18
+< -- 0
++ -- 7
+- -- 6
+* -- 19
+:= -- 59
+add.period$ -- 3
+call.type$ -- 1
+change.case$ -- 6
+chr.to.int$ -- 0
+cite$ -- 2
+duplicate$ -- 10
+empty$ -- 18
+format.name$ -- 6
+if$ -- 53
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 1
+newline$ -- 8
+num.names$ -- 2
+pop$ -- 8
+preamble$ -- 1
+purify$ -- 5
+quote$ -- 0
+skip$ -- 7
+stack$ -- 0
+substring$ -- 5
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 4
+warning$ -- 1
+while$ -- 2
+width$ -- 2
+write$ -- 11
+(There were 5 error messages)

@@ -1,0 +1,61 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{mitchell:2019b}{article}{}
+      \name{author}{3}{}{%
+        {{hash=8b25fdd848cc39ef4082380703658120}{%
+           family={Mitchell},
+           familyi={M\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=d5205feac6028889b50eadacf77912a6}{%
+           family={Sheriff},
+           familyi={S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=34f8699d468d616d0e7ac43817709f69}{%
+           family={Hara},
+           familyi={H\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{e8e89c5b132d261c18d3288be5767e52}
+      \strng{fullhash}{e8e89c5b132d261c18d3288be5767e52}
+      \strng{bibnamehash}{e8e89c5b132d261c18d3288be5767e52}
+      \strng{authorbibnamehash}{e8e89c5b132d261c18d3288be5767e52}
+      \strng{authornamehash}{e8e89c5b132d261c18d3288be5767e52}
+      \strng{authorfullhash}{e8e89c5b132d261c18d3288be5767e52}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Global Security, Safety and Sustainability \- The Security Challenges of the Connected World}
+      \field{series}{Communication in Computer and Information Science}
+      \field{title}{{DappER: Decentralised Application for Exam Reviews}}
+      \field{year}{2019}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

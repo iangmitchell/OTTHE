@@ -1,0 +1,126 @@
+\documentclass[pdf,table]{beamer}
+\usepackage{graphicx,hyperref,pdfpages}
+\usepackage{tikz}
+\usepackage{textpos}
+\usepackage{longtable}
+\usepackage{color}
+\usepackage{listings}
+\usepackage{color}
+\usepackage[style=numeric,backend=biber]{biblatex}
+%
+\usetikzlibrary{arrows}
+\usetikzlibrary{positioning,chains,fit,shapes,calc}
+\usetikzlibrary{mindmap}
+\usetikzlibrary{shapes.multipart}
+\usetikzlibrary{decorations.text}
+%
+\addbibresource{../CST4025.bib}
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+%
+\input{../lst}
+\input{../tikset}
+\input{../../definitions}
+%
+\mode<presentation>{
+\usetheme{Madrid}
+\usecolortheme{beaver}
+}
+%
+\newcommand{\theweek}{11}
+\renewcommand{\theequation}{\theweek.\arabic{equation}}
+
+\title[\moduleCode:L\theweek]{\moduleTitle \\ Week: \theweek \\ Title: Case Study} 
+\institute[]{\includegraphics[scale=0.25]{../../../logo/mdxSmall} \\ Middlesex University, \\Dept. of Computer Science, \\London}
+\author[\textcopyright \email]{\moduleLeader}
+\date{\today}
+
+
+
+
+\begin{document}
+	\begin{frame}
+		\titlepage
+	\end{frame}
+
+
+\addtobeamertemplate{frametitle}{}{%
+\begin{textblock*}{100mm}(.94\textwidth,-0.85cm)
+\includegraphics[scale=0.1]{../../../logo/transparent}
+\end{textblock*}}
+
+	\begin{frame}{Lecture Objectives}
+		\begin{block}{Aims}
+			\begin{itemize}
+				\item Review Blockchain Application
+				\item DappER \cite{mitchell:2019b}
+			\end{itemize}
+		\end{block}
+	\end{frame}
+
+\begin{frame}{Reading}
+	\begin{block}{Case Study}
+		Complete reading of the DappER \cite{mitchell:2019b}
+	\end{block}
+\end{frame}
+
+\begin{frame}{Summary}
+	\begin{itemize}
+		\item Case Study
+		\item Overall blockchain development
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{References}
+	\printbibliography
+\end{frame}
+	
+\begin{frame}
+	\frametitle{Web Resources}
+	\begin{itemize}
+	\item \url{http://hyperledger.org}
+	\item \url{https://nodejs.org}
+	\end{itemize}
+\end{frame}
+
+\end{document}
+
+%
+%\begin{frame}{}{}
+%	\begin{columns}[T]
+%	but in the reject example only reject is returned.
+%		\end{column}
+%		\begin{column}{0.48\textwidth}
+%			{\bf Listing}
+%			\lstinputlisting[language=JavaScript]{.js}
+%		\end{column}
+%	\end{columns}	
+%\end{frame}
+
+
+
+%\begin{frame}{}
+%	\begin{columns}[T]
+%		\begin{column}{0.48\textwidth}
+%		\end{column}
+%		\begin{column}{0.48\textwidth}
+%			{\bf XXX}
+%		\end{column}
+%	\end{columns}	
+%\end{frame}
+%
+%
+
+%\begin{frame}{X}
+%	\begin{columns}[T]
+%		\begin{column}{0.48\textwidth}
+%			\begin{itemize}
+%				\item XXX 
+%			\end{itemize}
+%		\end{column}
+%		\begin{column}{0.48\textwidth}
+%			{\bf XXX}
+%		\end{column}
+%	\end{columns}	
+%\end{frame}
+\end{document}

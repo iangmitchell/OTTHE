@@ -1,0 +1,18 @@
+[0] Config.pm:302> INFO - This is Biber 2.9
+[0] Config.pm:305> INFO - Logfile is 'l10.blg'
+[28] biber:313> INFO - === Thu Sep 26, 2019, 15:04:54
+[51] Biber.pm:371> INFO - Reading 'l10.bcf'
+[117] Biber.pm:857> INFO - Found 3 citekeys in bib section 0
+[131] Biber.pm:3981> INFO - Processing section 0
+[142] Biber.pm:4154> INFO - Looking for bibtex format file '../CST4025.bib' for section 0
+[145] bibtex.pm:1468> INFO - LaTeX decoding ...
+[186] bibtex.pm:1294> INFO - Found BibTeX data source '../CST4025.bib'
+[188] Utils.pm:169> WARN - Duplicate entry key: 'castro1999practical' in file '../CST4025.bib', skipping ...
+[206] Utils.pm:169> WARN - I didn't find a database entry for 'jahankhani:2019c' (section 0)
+[220] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[220] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[220] Biber.pm:3809> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[221] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-US'
+[224] bbl.pm:617> INFO - Writing 'l10.bbl' with encoding 'ascii'
+[226] bbl.pm:720> INFO - Output to l10.bbl
+[227] Biber.pm:110> INFO - WARNINGS: 2

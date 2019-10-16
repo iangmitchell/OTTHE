@@ -1,0 +1,36 @@
+\documentclass[oneside,12pt]{article}
+\usepackage{graphicx}
+\usepackage{fancyhdr,times}
+\usepackage{tikz}
+\usepackage{listings}
+\usepackage{textpos}
+\usepackage{hyperref}
+\usepackage{standalone,import}
+\usepackage{natbib}
+\usetikzlibrary{arrows}
+\usetikzlibrary{positioning,chains,fit,shapes,calc}
+
+\input{../../definitions}
+\input{../tikset}
+\input{../lst}
+
+\newcommand{\theweek}{10}
+\begin{document}
+\title{\includegraphics[scale=0.5]{../../../logo/mdxlogo} \\ \moduleCode \\ \moduleTitle \\ Week \theweek \\ \theauthor}
+%\author{Dr Ian Mitchell }
+\date{\empty}
+\maketitle
+
+\pagestyle{fancy}
+\lhead{\moduleCode: Week \theweek}
+\rfoot{  \email}
+\lfoot{ \thepage}
+\cfoot{ \copyright \academicyear }
+
+
+
+%\input{exercise}
+\subimport{.}{exercise.tex}
+\bibliographystyle{plain}
+\bibliography{../CST4025}
+\end{document}

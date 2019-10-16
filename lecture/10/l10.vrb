@@ -1,0 +1,2 @@
+\frametitle{Logic}\framesubtitle {Listing}
+	\lstinputlisting[language=JavaScript]{../boc/lib/script.js}
