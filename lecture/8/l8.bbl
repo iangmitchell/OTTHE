@@ -1,0 +1,300 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{bahsoun2015making}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=bc96fab4afb6b23d69741cecc8305e95}{%
+           family={Bahsoun},
+           familyi={B\bibinitperiod},
+           given={Jean-Paul},
+           giveni={J\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=6d84b5e8da24c645eb6bc438af7621c4}{%
+           family={Guerraoui},
+           familyi={G\bibinitperiod},
+           given={Rachid},
+           giveni={R\bibinitperiod}}}%
+        {{hash=d56e9a2894470766285711ea1032a1bb}{%
+           family={Shoker},
+           familyi={S\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{e7b0c95f8d68ce3183b8bfa11927f720}
+      \strng{fullhash}{e7b0c95f8d68ce3183b8bfa11927f720}
+      \strng{bibnamehash}{e7b0c95f8d68ce3183b8bfa11927f720}
+      \strng{authorbibnamehash}{e7b0c95f8d68ce3183b8bfa11927f720}
+      \strng{authornamehash}{e7b0c95f8d68ce3183b8bfa11927f720}
+      \strng{authorfullhash}{e7b0c95f8d68ce3183b8bfa11927f720}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2015 IEEE International Parallel and Distributed Processing Symposium}
+      \field{title}{Making bft protocols really adaptive}
+      \field{year}{2015}
+      \field{pages}{904\bibrangedash 913}
+      \range{pages}{10}
+    \endentry
+    \entry{castro1999practical}{inproceedings}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{hash=084730901e78fd30411e6af546d8540f}{%
+           family={Castro},
+           familyi={C\bibinitperiod},
+           given={Miguel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=8d8bf2803c6ae711dd3210bfe6b7086f}{%
+           family={Liskov},
+           familyi={L\bibinitperiod},
+           given={Barbara},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{44df5ab61085b2feb5835839e2526722}
+      \strng{fullhash}{44df5ab61085b2feb5835839e2526722}
+      \strng{bibnamehash}{44df5ab61085b2feb5835839e2526722}
+      \strng{authorbibnamehash}{44df5ab61085b2feb5835839e2526722}
+      \strng{authornamehash}{44df5ab61085b2feb5835839e2526722}
+      \strng{authorfullhash}{44df5ab61085b2feb5835839e2526722}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{OSDI}
+      \field{title}{Practical Byzantine fault tolerance}
+      \field{volume}{99}
+      \field{year}{1999}
+      \field{pages}{173\bibrangedash 186}
+      \range{pages}{14}
+    \endentry
+    \entry{sawtooth:consensus}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=206e80ba485e5f943da0eff08bfb1fa6}{%
+           family={Hylperledger},
+           familyi={H\bibinitperiod},
+           given={Sawtooth},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Linux Foundation}%
+      }
+      \strng{namehash}{206e80ba485e5f943da0eff08bfb1fa6}
+      \strng{fullhash}{206e80ba485e5f943da0eff08bfb1fa6}
+      \strng{bibnamehash}{206e80ba485e5f943da0eff08bfb1fa6}
+      \strng{authorbibnamehash}{206e80ba485e5f943da0eff08bfb1fa6}
+      \strng{authornamehash}{206e80ba485e5f943da0eff08bfb1fa6}
+      \strng{authorfullhash}{206e80ba485e5f943da0eff08bfb1fa6}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://github.com/hyperledger/sawtooth-rfcs}
+      \field{note}{[accessed: 04-AUG-19]}
+      \field{title}{PBFT consensus - a pending Sawtooth RFC}
+      \field{version}{0.1}
+    \endentry
+    \entry{lamport1982byzantine}{article}{}
+      \name{author}{3}{}{%
+        {{hash=5d77435450d10a850a5b58577b9a456b}{%
+           family={Lamport},
+           familyi={L\bibinitperiod},
+           given={Leslie},
+           giveni={L\bibinitperiod}}}%
+        {{hash=88bd932c15c4ae7b0f7652a409325659}{%
+           family={Shostak},
+           familyi={S\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=87523aad6a4881d07c4c00ef21114da5}{%
+           family={Pease},
+           familyi={P\bibinitperiod},
+           given={Marshall},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{413430fb3846d7facccddaff1effdd66}
+      \strng{fullhash}{413430fb3846d7facccddaff1effdd66}
+      \strng{bibnamehash}{413430fb3846d7facccddaff1effdd66}
+      \strng{authorbibnamehash}{413430fb3846d7facccddaff1effdd66}
+      \strng{authornamehash}{413430fb3846d7facccddaff1effdd66}
+      \strng{authorfullhash}{413430fb3846d7facccddaff1effdd66}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Transactions on Programming Languages and Systems (TOPLAS)}
+      \field{number}{3}
+      \field{title}{The Byzantine generals problem}
+      \field{volume}{4}
+      \field{year}{1982}
+      \field{pages}{382\bibrangedash 401}
+      \range{pages}{20}
+    \endentry
+    \entry{nguyen2018survey}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f3d87f0f5d4979324960b80f59e397f8}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Giang-Truong},
+           giveni={G\bibinithyphendelim T\bibinitperiod}}}%
+        {{hash=373a54c2cc9da681f96b2ab0b5bbd028}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Kyungbaek},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{dcbd9a18a2a658e5ae96d2256db72553}
+      \strng{fullhash}{dcbd9a18a2a658e5ae96d2256db72553}
+      \strng{bibnamehash}{dcbd9a18a2a658e5ae96d2256db72553}
+      \strng{authorbibnamehash}{dcbd9a18a2a658e5ae96d2256db72553}
+      \strng{authornamehash}{dcbd9a18a2a658e5ae96d2256db72553}
+      \strng{authorfullhash}{dcbd9a18a2a658e5ae96d2256db72553}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Information processing systems}
+      \field{number}{1}
+      \field{title}{A Survey about Consensus Algorithms Used in Blockchain.}
+      \field{volume}{14}
+      \field{year}{2018}
+    \endentry
+    \entry{pease1980reaching}{article}{}
+      \name{author}{3}{}{%
+        {{hash=87523aad6a4881d07c4c00ef21114da5}{%
+           family={Pease},
+           familyi={P\bibinitperiod},
+           given={Marshall},
+           giveni={M\bibinitperiod}}}%
+        {{hash=88bd932c15c4ae7b0f7652a409325659}{%
+           family={Shostak},
+           familyi={S\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=5d77435450d10a850a5b58577b9a456b}{%
+           family={Lamport},
+           familyi={L\bibinitperiod},
+           given={Leslie},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{c4a7a974c21bd34351f8d6ed43957888}
+      \strng{fullhash}{c4a7a974c21bd34351f8d6ed43957888}
+      \strng{bibnamehash}{c4a7a974c21bd34351f8d6ed43957888}
+      \strng{authorbibnamehash}{c4a7a974c21bd34351f8d6ed43957888}
+      \strng{authornamehash}{c4a7a974c21bd34351f8d6ed43957888}
+      \strng{authorfullhash}{c4a7a974c21bd34351f8d6ed43957888}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the ACM (JACM)}
+      \field{number}{2}
+      \field{title}{Reaching agreement in the presence of faults}
+      \field{volume}{27}
+      \field{year}{1980}
+      \field{pages}{228\bibrangedash 234}
+      \range{pages}{7}
+    \endentry
+    \entry{thakkar2018performance}{article}{}
+      \name{author}{3}{}{%
+        {{hash=d84382d720dcf31413487b3f8b3b2f83}{%
+           family={Thakkar},
+           familyi={T\bibinitperiod},
+           given={Parth},
+           giveni={P\bibinitperiod}}}%
+        {{hash=f8264f4a5604f6a60c87e0b24a5f6686}{%
+           family={Nathan},
+           familyi={N\bibinitperiod},
+           given={Senthil},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f1b64b736f6f16e5c357a38b52233ccd}{%
+           family={Vishwanathan},
+           familyi={V\bibinitperiod},
+           given={Balaji},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{d22e327672ccfa27a307b3d900498d24}
+      \strng{fullhash}{d22e327672ccfa27a307b3d900498d24}
+      \strng{bibnamehash}{d22e327672ccfa27a307b3d900498d24}
+      \strng{authorbibnamehash}{d22e327672ccfa27a307b3d900498d24}
+      \strng{authornamehash}{d22e327672ccfa27a307b3d900498d24}
+      \strng{authorfullhash}{d22e327672ccfa27a307b3d900498d24}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1805.11390}
+      \field{title}{Performance Benchmarking and Optimizing Hyperledger Fabric Blockchain Platform}
+      \field{year}{2018}
+    \endentry
+    \entry{yaga2018blockchain}{report}{}
+      \name{author}{4}{}{%
+        {{hash=bdfe2c2ab6cb98ded524796ccf8b5c9c}{%
+           family={Yaga},
+           familyi={Y\bibinitperiod},
+           given={Dylan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=eac098e5805fbc204d757a7083c69ac6}{%
+           family={Mell},
+           familyi={M\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=ca5a5af1ce1f9d4887ffa1f2cdc801eb}{%
+           family={Roby},
+           familyi={R\bibinitperiod},
+           given={Nik},
+           giveni={N\bibinitperiod}}}%
+        {{hash=6ea98e3682d33480471e822adaacdc41}{%
+           family={Scarfone},
+           familyi={S\bibinitperiod},
+           given={Karen},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{institution}{2}{%
+        {National Institute of Standards}%
+        {Technology}%
+      }
+      \strng{namehash}{af30e963a928161d42a5c7355a76131d}
+      \strng{fullhash}{f29374f4f9bad74e182034412013c00c}
+      \strng{bibnamehash}{af30e963a928161d42a5c7355a76131d}
+      \strng{authorbibnamehash}{af30e963a928161d42a5c7355a76131d}
+      \strng{authornamehash}{af30e963a928161d42a5c7355a76131d}
+      \strng{authorfullhash}{f29374f4f9bad74e182034412013c00c}
+      \field{sortinit}{Y}
+      \field{sortinithash}{b8d711a035f7be9840c721c82920477e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Blockchain technology overview}
+      \field{type}{techreport}
+      \field{year}{2018}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
