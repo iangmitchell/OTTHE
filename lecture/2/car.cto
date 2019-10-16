@@ -1,0 +1,37 @@
+namespace example.car.org
+
+enum gender{
+  o male
+  o female
+  o nonbinary
+} 
+
+abstract concept address {
+  o Integer houseNumber
+  o String streetName
+  o String town
+  o String postCode
+  o String country default="UK"
+}
+
+participant person identified by personID{
+  o String personID  regex=/[0-9]{4}/
+  o String lastName optional 
+  o String firstName[] regex=/[a-Z]{32}/
+  o gender Gender 
+  o address Address 
+}
+
+asset car identified by carReg{
+  o String carReg
+  o String model
+  o String manufacturer
+  o Integer year default=2019 range=[1980,]
+  --> person owner 
+  --> person previousOwners
+}
+
+transaction register {
+  --> car tradedCar
+  --> person newOwner
+}

@@ -1,0 +1,35 @@
+/*
+author: ian mitchell
+date:   June 2019
+*/
+namespace org.example.net
+enum gender{
+	o MALE
+	o FEMALE
+	o NONBINARY 
+}
+abstract concept address {
+	o String houseNumber 
+	o String streetName
+	o String townName
+	o String county 
+	o String country default="UK"
+	o String postCode regex=/RegEx/
+}
+participant person identified by personID{
+	o String personID regex=/[0-9]{8}/
+	o String lastName
+	o String firstName
+	o gender Gender
+	o address Address
+}
+asset product identified by productID{
+	o String productID regex=/[0-9]{2,4}/
+	o String name 
+	o Integer year default=2019 range=[1980,]
+	o Double weight optional
+	o DateTime transferOwnership optional
+	o String description 
+	--> person owner
+	--> person[] previousOwners
+}

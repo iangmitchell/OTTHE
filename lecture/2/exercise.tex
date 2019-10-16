@@ -1,0 +1,64 @@
+
+\section{Linux}
+If using another operating system create a virtual machine with Ubuntu. If you are already using Linux then you should not need to do anything. Much of what we do will be based on Ubuntu 18.04 LTS (64 bit).
+
+Create a directory CST4025 and a subdirectory \theweek. Save all your work in this directory. 
+
+
+\section{CTO - Trader Example - MyFirstBlockchain}
+The trader example is available at: \\
+\url{https://hyperledger.github.io/composer/latest/tutorials/developer-tutorial.html}
+
+Open up a new tab in Firefox browser and go to the following URL:\\
+\url{https://composer-playground.mybluemix.net/login}
+
+Then start a new blockchain example.
+
+\subsection{Trader Assets} 
+The trader example is a simple description of an asset changing ownership via a transaction. 
+
+We are going to deploy this simple network on Composer Playground. Fig \ref{fi:traderCTO} displays the CTO code we are interested in. In composer-playground this code can be viewed by being in `Define' mode annd selecting the `Model File' tab.
+
+Answer the following questions:
+\begin{enumerate}
+	\item Identify the namespace?
+	\item Identify the participant and its associated attributes?
+	\item Identify the asset and its associated attributes?
+	\item Identify the asset's relationship to the participant?
+	\item Identify the transactions and its relationships with participants and assets?
+\end{enumerate}
+
+Implement the following:
+\begin{enumerate}
+	\item Participant A: Create a participant, make a note of their attributes and identifiers.
+	\item Participant B: Create a second participant, make a note of their attributes and identifiers.
+	\item Asset 1: Create one asset, make a note of their attributes and identifiers.
+	\item Ownership: The asset should belong to participant A to start with.
+	\item Transaction: Change the ownership of the commodity via a transaction.
+	\item Transaction: Reset the ownership via another transaction.
+	\item Look at the transactions made and can you identify when you made the two transactions above.
+\end{enumerate}
+
+
+
+%Enter the code in Figs \ref{fi:traderCTO}, \ref{fi:traderACL} and \ref{fi:traderJS} in sections
+
+\begin{figure}\label{fi:traderCTO}
+	\lstinputlisting[language=CTO]{trader-/models/trading.cto}
+	\caption{Trader Code for CTO, taken from Hyperledger website}
+\end{figure}
+
+
+\section{Car Owner}
+You have to design a CTO for car ownership, the CTO should contain and have the following:
+\begin{itemize}
+	\item Paticipant: individual, name, id, address
+	\item Asset: car, reg, make, model, and a relationship of owner (an individual who owns the car)
+	\item Transaction: should facilitate the change of ownerships between different individuals
+\end{itemize}
+
+\section{Bank}
+Before designing the data model for the bank and line-of-credit model. Look at some of the other examples available on hyperledger composer. Finally, look at the model carefully and design a CTO for the bank and line-of-credit example we discussed in the lecture.
+
+\section{Coursework}
+You need to think of a blockchain application. None of the examples on hyperledger, or in the series of tutorials is permitted. Your idea needs to be original and fairly complex, to reflect the complications we experience from day to day. If you have an idea discuss this with your tutor and start to think of the data model exercise. 

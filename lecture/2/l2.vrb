@@ -1,0 +1,3 @@
+\frametitle{CTO}\framesubtitle {Example}
+	\lstinputlisting[language=CTO,lastline=25]{example.cto}
+	\lstinputlisting[language=CTO,firstnumber=26,firstline=26]{example.cto}

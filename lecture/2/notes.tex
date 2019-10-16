@@ -1,0 +1,41 @@
+\documentclass[]{article}
+\usepackage{setspace}
+\usepackage[acronym]{glossaries}
+\doublespacing
+\input{../../definitions.tex}
+\newcommand{\theweek}{1}
+%glossary items
+\newglossaryentry{lc}{name=LC, description={letter of credit}}
+\newglossaryentry{bl}{name=BL, description={bill of lading}}
+\newglossaryentry{rtw}{name=RTW, description={Return to Work}}
+\newglossaryentry{poet}{name=PoET,description={Proof of Elapsed-Time}}
+\newglossaryentry{pow}{name=PoW,description={Proof of Work}}
+\makeglossaries
+% makeindex -s notes.ist -o notes.gls notes.glo
+\begin{document}
+\title{\moduleCode\ Lecture Notes for Learning Week \theweek }
+\author{\moduleLeader}
+\maketitle
+
+%\glsadd{bc}
+%\glsadd{rtw}
+%\glsadd{jit}
+%\glsadd{iot}
+\glsadd{l/c} Letter of credit
+\glsaddall
+\printglossaries
+
+Blockchain applications and data modelling.
+
+\begin{description}
+	\item [6] Communication and Interoperability. Communicate securely across an organisation on an open network. Interoperability, OS agnostic and web-based.
+	\item[10] This is not  a flowchart?	
+	\item[10] look at flowchart in NIST? print 53 of yaga (NIST review)
+	\item[13] Separation of concerns: chunk. Separate problem domain so that each part has its own, and only one, concern. A concern is a set of information that affects software. Normally, in OO-design concerns are separated into objects.
+	\item[13] colour is an asset of car? In manufacturing and selling colour could be an important asset, however, in taxis or car hire, it becomes a less important asset and more of an attribute. The concern is not high enough.
+	\item[20] L/C letter of credit
+		
+
+\end{description}
+
+\end{document}

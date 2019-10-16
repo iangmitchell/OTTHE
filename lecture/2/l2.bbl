@@ -1,0 +1,76 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{hyperledger:1}{misc}{}
+      \list{institution}{1}{%
+        {The Linux Foundation}%
+      }
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labeltitlesource}{title}
+      \field{title}{Hyperledger Architecture, Volume 1}
+      \field{year}{2017}
+    \endentry
+    \entry{yaga2018blockchain}{report}{}
+      \name{author}{4}{}{%
+        {{hash=bdfe2c2ab6cb98ded524796ccf8b5c9c}{%
+           family={Yaga},
+           familyi={Y\bibinitperiod},
+           given={Dylan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=eac098e5805fbc204d757a7083c69ac6}{%
+           family={Mell},
+           familyi={M\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=ca5a5af1ce1f9d4887ffa1f2cdc801eb}{%
+           family={Roby},
+           familyi={R\bibinitperiod},
+           given={Nik},
+           giveni={N\bibinitperiod}}}%
+        {{hash=6ea98e3682d33480471e822adaacdc41}{%
+           family={Scarfone},
+           familyi={S\bibinitperiod},
+           given={Karen},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{institution}{2}{%
+        {National Institute of Standards}%
+        {Technology}%
+      }
+      \strng{namehash}{af30e963a928161d42a5c7355a76131d}
+      \strng{fullhash}{f29374f4f9bad74e182034412013c00c}
+      \strng{bibnamehash}{af30e963a928161d42a5c7355a76131d}
+      \strng{authorbibnamehash}{af30e963a928161d42a5c7355a76131d}
+      \strng{authornamehash}{af30e963a928161d42a5c7355a76131d}
+      \strng{authorfullhash}{f29374f4f9bad74e182034412013c00c}
+      \field{sortinit}{Y}
+      \field{sortinithash}{b8d711a035f7be9840c721c82920477e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Blockchain technology overview}
+      \field{type}{techreport}
+      \field{year}{2018}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
