@@ -1,0 +1,44 @@
+\section{Introduction}
+Download the {\tt .bna} file from the website. Open composer-playground in a compatible browser. Using this {\tt .bna} file you can either upload it into playground, or extract individual files and cut and paste them appropriately. After uploading to composer playground, and logging in as Administrator  complete the following:
+\begin{enumerate}
+	\item Create some customer details:
+		\begin{itemize}
+			\item Enter the following values, `C001', `Andrei', `111', `Wood St', `E108UT' for `customerID', `Name', `NameNumber', `Street' and `PostCode', respectively. 
+			\item Enter the following values, `C002', `Xu', `222', `Station Rd', `SE78HD' for `customerID', `Name', `NameNumber', `Street' and `PostCode', respectively. 
+		\end{itemize}
+	\item Create some restaurant details:
+		\begin{itemize}
+			\item Enter the following values, `R001', `Piece Of Pizza', `110', `High St' and `SE104BT' for `poID', `Name', `NameNumber', `Street' and `PostCode', respectively. 
+			\item Enter the following values, `R002', `PizzaSlice', `220', `High St' and `SE222BT' for `poID', `Name', `NameNumber', `Street' and `PostCode', respectively. 
+		\end{itemize}
+	\item Create some pizza details:
+		\begin{itemize}
+			\item `0001', `americana' for `pID' and `pizzaType', respectively.
+			\item `0002', `carbonara' for `pID' and `pizzaType', respectively.
+			\item `0003', `margherita' for `pID' and `pizzaType', respectively.
+		\end{itemize}
+	\item Create some auditor details:
+		\begin{itemize}
+			\item Enter the following value, `P122A' for `pqcID'. 
+		\end{itemize}
+	\item Enter the `ID Registry' and create customers `C1' and `C2' for customers with ID's `C001' and `C002', respectively.
+	\item Enter the `ID Registry' and create pizzaOutlets `R1' and `R2' for customers with ID's `R001' and `R002', respectively.
+	\item Using the transaction, `placeOrder', create two new orders for the customer with `customerID', `C001'. The new orders should have the following details:
+		\begin{itemize}
+			\item `1111', 'C001', '0001', 'R001' for `orderID', `Customer', `pizza' and `restaurant', respectively.
+			\item `1112', 'C001', '0003', 'R002' for `orderID', `Customer', `pizza' and `restaurant', respectively.
+		\end{itemize}
+	\item Using the transaction, `placeOrder', create two new orders for the customer with `customerID', `C002'. The new orders should have the following details:
+		\begin{itemize}
+			\item `2221', 'C002', '0002', 'R001' for `orderID', `Customer', `pizza' and `restaurant', respectively.
+			\item `2222', 'C002', '0003', 'R002' for `orderID', `Customer', `pizza' and `restaurant', respectively.
+		\end{itemize}
+	\item Alter the code to allow for multiple orders?
+	\item Alter the code to allow for toppings to be included in orders?
+	\item Can the restaurant change or view its orders. Alter the code to allow the restaurant to view the menu.
+	\item Alter the code to allow the restaurant to change its own menu.
+	\item Alter the code to allow a dispatch company to handle the delivery process
+	\item Alter the code to allow the quality auditor to view and read all the transactions.
+	
+		
+\end{enumerate}

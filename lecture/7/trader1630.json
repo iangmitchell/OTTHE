@@ -1,0 +1,30 @@
+{
+  "$class": "org.t4.net.Trader",
+  "tradeId": "1630",
+  "firstName": "",
+  "lastName": "",
+  "Status": "clerk",
+  "commoditiesOwned": [
+    {
+      "$class": "org.t4.net.Commodity",
+      "tradingSymbol": "5041",
+      "description": "",
+      "quantity": 10,
+      "owner": "resource:org.t4.net.Trader#5898"
+    },
+    {
+      "$class": "org.t4.net.Commodity",
+      "tradingSymbol": "6033",
+      "description": "",
+      "quantity": 0,
+      "owner": "resource:org.t4.net.Trader#5898"
+    },
+    {
+      "$class": "org.t4.net.Commodity",
+      "tradingSymbol": "8941",
+      "description": "",
+      "quantity": 0,
+      "owner": "resource:org.t4.net.Trader#5898"
+    }
+  ]
+}

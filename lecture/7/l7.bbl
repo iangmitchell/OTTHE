@@ -1,0 +1,95 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{hyperledger:gaur2018}{book}{}
+      \name{author}{6}{}{%
+        {{hash=f39bb45ccfa07697e4d3849a092358a0}{%
+           family={Gaur},
+           familyi={G\bibinitperiod},
+           given={Nitin},
+           giveni={N\bibinitperiod}}}%
+        {{hash=50b833b9bace4ddbcc2f0b0cdc9eaff7}{%
+           family={Desrosiers},
+           familyi={D\bibinitperiod},
+           given={Luc},
+           giveni={L\bibinitperiod}}}%
+        {{hash=93ef4838f524c45c4eac7c474677ad1d}{%
+           family={Novotny},
+           familyi={N\bibinitperiod},
+           given={Petr},
+           giveni={P\bibinitperiod}}}%
+        {{hash=cd1dfe24c6a02dd917c527fcb463f690}{%
+           family={Ramakrishna},
+           familyi={R\bibinitperiod},
+           given={Venkatraman},
+           giveni={V\bibinitperiod}}}%
+        {{hash=69306a46c56b108cb7dc89f3eb38dff2}{%
+           family={O'Dowd},
+           familyi={O\bibinitperiod},
+           given={Anthony},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cdee24636519e84046968ebadde8f525}{%
+           family={Baset},
+           familyi={B\bibinitperiod},
+           given={Salman\bibnamedelima A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Packt}%
+      }
+      \strng{namehash}{bc2f54b75eb98a56edec3b41fd9c8caa}
+      \strng{fullhash}{673a5c85489bf4634ef69c9177ecb369}
+      \strng{bibnamehash}{bc2f54b75eb98a56edec3b41fd9c8caa}
+      \strng{authorbibnamehash}{bc2f54b75eb98a56edec3b41fd9c8caa}
+      \strng{authornamehash}{bc2f54b75eb98a56edec3b41fd9c8caa}
+      \strng{authorfullhash}{673a5c85489bf4634ef69c9177ecb369}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781788994521}
+      \field{title}{Hands-on Blockchain with Hyperledger: Building Decentralised Applications with Hyperledger Fabric and Composer}
+      \field{year}{2018}
+    \endentry
+    \entry{hyperledger:1}{misc}{}
+      \list{institution}{1}{%
+        {The Linux Foundation}%
+      }
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labeltitlesource}{title}
+      \field{title}{Hyperledger Architecture, Volume 1}
+      \field{year}{2017}
+    \endentry
+    \entry{hyperledger:2}{misc}{}
+      \list{institution}{1}{%
+        {The Linux Foundation}%
+      }
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labeltitlesource}{title}
+      \field{title}{Hyperledger Architecture, Volume 2}
+      \field{year}{2018}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

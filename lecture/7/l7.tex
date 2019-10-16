@@ -1,0 +1,496 @@
+\documentclass[pdf,table]{beamer}
+\usepackage{graphicx,hyperref,pdfpages}
+\usepackage{tikz}
+\usepackage{textpos}
+\usepackage{longtable}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{tikz-uml}
+\usepackage[style=numeric,backend=biber]{biblatex}
+%
+\usetikzlibrary{arrows}
+\usetikzlibrary{positioning,chains,fit,shapes,calc}
+\usetikzlibrary{mindmap}
+\usetikzlibrary{shapes.multipart}
+\usetikzlibrary{decorations.text}
+%
+\addbibresource{../CST4025.bib}
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+%
+\input{../lst}
+\input{../tikset}
+\input{../../definitions}
+%
+\mode<presentation>{
+\usetheme{Madrid}
+\usecolortheme{beaver}
+}
+%
+\newcommand{\theweek}{7}
+\renewcommand{\theequation}{\theweek.\arabic{equation}}
+
+\title[\moduleCode:L\theweek]{\moduleTitle \\ Week: \theweek \\ Title: Node.js and TX: Lists} 
+\institute[]{\includegraphics[scale=0.25]{../../../logo/mdxSmall} \\ Middlesex University, \\Dept. of Computer Science, \\London}
+\author[\textcopyright \email]{\moduleLeader}
+\date{\today}
+
+
+
+
+\begin{document}
+	\begin{frame}
+		\titlepage
+	\end{frame}
+
+
+\addtobeamertemplate{frametitle}{}{%
+\begin{textblock*}{100mm}(.94\textwidth,-0.85cm)
+\includegraphics[scale=0.1]{../../../logo/transparent}
+\end{textblock*}}
+
+\begin{frame}{Lecture Objectives}
+		\begin{block}{Knowledge}
+			\begin{itemize}
+				\item Search
+				\item Lists, Arrays
+				\item UpdateAll
+				\item Advanced JS - more promises
+				\item Pizza Delivery
+				\item Events
+				\item Emit
+			\end{itemize}	
+		\end{block}
+		\begin{block}{Disclaimer}
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+		\end{block}
+\end{frame}
+
+\begin{frame}{Approach}
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{block}{Mistakes}
+				We can learn a lot from bad design. Sometimes it is necessary to make mistakes in order to learn.
+				Here we look at implementation of Arrays of items in registries, however, care is to be taken in 
+				and warning signs should be given and the reduction in data redundancy is a good thing.
+				Styles of programming will also be looked at, many coders avoid the use of promises and we will look at this approach.
+			\end{block}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			{\bf Bad Examples}
+			\begin{itemize}
+				\item Trader example 
+				\item keep tabs on trader commodities
+				\item restricted view
+				\item add trader
+				\item remove trader
+			\end{itemize}
+		\end{column}
+	\end{columns}	
+\end{frame}
+
+\begin{frame}{Scenario}
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{itemize}
+				\item Each trader has a list of commodities they currently own
+				\item For academic purposes
+				\item {\bf Consequences from last week}
+				\item removing a member of staff was difficult. Why?
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{itemize}
+				\item<2-> Only the owner can sell assets
+				\item<2-> if the member of staff removed had assets
+				\item<3-> these assets remain locked in, no one can sell them
+				\item<4-> each trader keeps a lists of the assets they own
+				\item<4-> requires updating each time a commodity changes ownership, for the seller and the buyer.
+				\item<5-> when a member of staff leaves a nominated member of staff is given all the assets, and then the member of staff is deleted.
+			\end{itemize}
+		\end{column}
+	\end{columns}	
+\end{frame}
+
+
+\begin{frame}{Trader}{CTO}
+	\begin{columns}[T]
+		\begin{column}{0.58\textwidth}
+			\lstinputlisting[language=CTO]{t5/models/sample.cto}
+		\end{column}
+		\begin{column}{0.38\textwidth}
+			{\bf Difference from last week? }
+			\begin{itemize}
+				\item<2-> line 25 - Array
+				\item<2-> Array is to represent all the commodities owned
+			\end{itemize}
+		\end{column}
+	\end{columns}	
+\end{frame}
+
+	
+\begin{frame}{Traders}{JSON}
+	\begin{columns}[T]
+		\begin{column}{0.44\textwidth}
+			\lstinputlisting[language=json]{t5/t0227.json}
+		\end{column}
+		\begin{column}{0.44\textwidth}
+			\lstinputlisting[language=json]{t5/t1711.json}
+		\end{column}
+	\end{columns}	
+\end{frame}
+
+\begin{frame}{Commodities}{JSON}
+	\begin{columns}[T]
+		\begin{column}{0.44\textwidth}
+			\lstinputlisting[language=json,lastline=23]{t5/commodity.json}
+		\end{column}
+		\begin{column}{0.44\textwidth}
+			\lstinputlisting[language=json,firstline=24,firstnumber=24]{t5/commodity.json}
+		\end{column}
+	\end{columns}	
+\end{frame}
+
+\begin{frame}{Trade Transaction}
+	\begin{itemize}
+		\item Check?
+		\item<2-> Buyer exists?
+		\item<2-> Commodity exists?
+		\item<2-> Updates?
+		\item<3-> Commodity ownership
+		\item<3-> Trader: commoditiesOwned array
+		\item<4-> Buyer: Adding to array
+		\item<4-> Seller: Removing from array
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Trader Transaction}{JS - Does Buyer Exist?}
+	\lstinputlisting[language=JavaScript,lastline=14]{t5/lib/sample.js}
+\end{frame}
+
+\begin{frame}{Trader Transaction}{JS - Add Commodity to Buyer Array}
+	\lstinputlisting[language=JavaScript,firstline=15,firstnumber=15,lastline=21]{t5/lib/sample.js}
+\end{frame}
+
+\begin{frame}{Trader Transaction}{JS - Remove Commodity to Seller Array}
+	\lstinputlisting[language=JavaScript,firstline=22,firstnumber=22,lastline=29]{t5/lib/sample.js}
+\end{frame}
+
+\begin{frame}{Trader Transaction}{JS - Commodity to Ownership updated}
+	\lstinputlisting[language=JavaScript,firstline=30,firstnumber=30,lastline=37]{t5/lib/sample.js}
+\end{frame}
+
+\begin{frame}{Trader Transaction}{JS - Buyer does not exist}
+	\lstinputlisting[language=JavaScript,firstline=38,firstnumber=38,lastline=44]{t5/lib/sample.js}
+\end{frame}
+
+\begin{frame}{Completing the Transaction}
+	\includegraphics[scale=0.45]{gx/tx-trader.png}
+\end{frame}
+
+\begin{frame}{Transaction History}
+	\includegraphics[scale=0.25]{gx/post-tx-history.png}
+\end{frame}
+
+\begin{frame}{Transaction History block}
+	\lstinputlisting[language=json]{t5/tx-history.json}
+\end{frame}
+
+\begin{frame}{Traders}{JSON}
+	\begin{columns}[T]
+		\begin{column}{0.44\textwidth}
+			\lstinputlisting[language=json]{t5/post0227.json}
+		\end{column}
+		\begin{column}{0.44\textwidth}
+			\lstinputlisting[language=json]{t5/post1711.json}
+		\end{column}
+	\end{columns}	
+\end{frame}
+
+\begin{frame}{Commodities}{JSON}
+	\begin{columns}[T]
+		\begin{column}{0.44\textwidth}
+			\lstinputlisting[language=json,lastline=23]{t5/postCommodity.json}
+		\end{column}
+		\begin{column}{0.44\textwidth}
+			\lstinputlisting[language=json,firstline=24,firstnumber=24]{t5/postCommodity.json}
+		\end{column}
+	\end{columns}	
+\end{frame}
+
+\begin{frame}{Alternative}
+	\begin{itemize}
+		\item Pizza Delivery
+		\item with a promise chain
+		\item using await command
+		\item The burden of access is shifted. Where?
+		\item<2-> The burden is shifted from JS to ACL
+		\item Look at examples on github \url{https://github.com/hyperledger/composer-sample-networks}
+		\item These cannot be used for the coursework.
+		\item Pizza
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Pizza}{Simplified Use Case}
+\centering
+\begin{tikzpicture}[scale=1.0]
+	\umlactor[x=0,y=1,scale=0.5,name=CUST]{CUST}
+	\umlactor[x=9,y=2,scale=0.5,name=REST]{REST}
+	\umlactor[x=0,y=4,scale=0.5,name=PDQ]{PDQ}
+	\begin{umlsystem}[x=1,fill=blue!10]{Pizza}
+		\umlusecase[x=4,y=2,name=Order]{Order}
+	\end{umlsystem}
+	\umlassoc{CUST}{Order}
+	\umlassoc{REST}{Order}
+	\umlassoc{PDQ}{Order}
+\end{tikzpicture}
+%\caption{ Use Case for Pizza Quality Commission and delivery service}
+%\lable{fi:ucd:pdq}
+\end{frame}
+
+\begin{frame}{Pizza}{CTO - Status}
+	\begin{columns}[T]
+		\begin{column}{0.44\textwidth}
+			\lstinputlisting[language=cto,firstline=8,firstnumber=8,lastline=14]{p2/models/model.cto}
+		\end{column}
+		\begin{column}{0.44\textwidth}
+			\begin{itemize}
+				\item<2-> lifecycle of order
+				\item<2-> PLACED - create order by customer
+				\item<2-> PREPARED - update by pizzOutlet
+				\item<2-> DISPATCHED - update by pizzaOutlet
+				\item<2-> DELIVERED - update by pizzaOutlet 
+			\end{itemize}
+		\end{column}
+	\end{columns}	
+\end{frame}
+
+\begin{frame}{Pizza}{CTO - Size \& PizzaType}
+	\begin{columns}[T]
+		\begin{column}{0.55\textwidth}
+			\lstinputlisting[language=cto,firstline=27,firstnumber=27,lastline=40]{p2/models/model.cto}
+		\end{column}
+		\begin{column}{0.35\textwidth}
+			\begin{itemize}
+				\item Toppings
+				\item Size	
+				\item Pizza Type
+				\item Enumerator Types
+			\end{itemize}
+		\end{column}
+	\end{columns}	
+\end{frame}
+
+\begin{frame}{Pizza}{CTO - Address - Customer - Restaurant}
+			\lstinputlisting[language=cto,firstline=41,firstnumber=42,lastline=62]{p2/models/model.cto}
+%j			\lstinputlisting[language=cto,firstline=50,firstnumber=50,lastline=58]{p2/models/model.cto}
+\end{frame}
+
+\begin{frame}{Pizza}{CTO - Order }
+	\begin{columns}[T]
+		\begin{column}{0.35\textwidth}
+			\lstinputlisting[language=cto,firstline=70,firstnumber=70,lastline=80]{p2/models/model.cto}
+		\end{column}
+		\begin{column}{0.55\textwidth}
+			\begin{itemize}
+				\item Where does ID come from?
+				\item<2-> User generated, can be pseudo-random
+				\item<2-> Comment on mulitple orders
+				\item<2-> array of pizzaDetails
+				\item<2-> TOPPING is inaccessible
+				\item<2-> Usually an order has 3 things:
+					\begin{enumerate}
+						\item<3-> Product: Pizza, sometimes the quantity
+						\item<3-> Seller: Restaurant
+						\item<3-> Buyer: Customer
+					\end{enumerate}
+				\item<3-> STATUS: track progress
+			\end{itemize}
+		\end{column}
+	\end{columns}	
+\end{frame}
+
+\begin{frame}{Pizza}{CTO - Transactions \& Events}
+	\lstinputlisting[language=cto,firstline=89,firstnumber=89]{p2/models/model.cto}
+\end{frame}
+
+\begin{frame}
+	\begin{description}
+		\item[CustomerSeeSelf:] Customers can only see themselves
+	\end{description}
+\end{frame}
+
+\begin{frame}{Rules}{ACL - Customer}
+	\begin{columns}[T]
+		\begin{column}{0.50\textwidth}
+			\lstinputlisting[language=acl,firstline=8,lastline=31,firstnumber=8]{p2/permissions.acl}
+		\end{column}
+		\begin{column}{0.45\textwidth}
+		\begin{description}
+			\item[CustomerSeeSelf:] \hfill \\ Customers can only see themselves. Condition that ensures the consumer in the order is equal to the customer.
+			\item[CustomerSeePizza:] \hfill \\ Customers can see the pizzas available 
+		\end{description}	
+	\end{column}
+	\end{columns}	
+\end{frame}
+
+
+\begin{frame}{Rules}{ACL - Customer}
+	\begin{columns}[T]
+		\begin{column}{0.50\textwidth}
+			\lstinputlisting[language=acl,firstline=49,firstnumber=49,lastline=62]{p2/permissions.acl}
+		\end{column}
+		\begin{column}{0.45\textwidth}
+		\begin{description}
+			\item[customerPlaceOrder:] \hfill \\ Only a customer can place an order and access transaction {\tt placeOrder}
+			\item[customerReadRestaurant:] \hfill \\ Customers are permitted to read pizzaOutlet details
+		\end{description}	
+	\end{column}
+	\end{columns}	
+\end{frame}
+
+
+\begin{frame}{Rules}{ACL - Restaurant}
+	\begin{columns}[T]
+		\begin{column}{0.50\textwidth}
+			\lstinputlisting[language=acl,firstline=33,firstnumber=33,lastline=48]{p2/permissions.acl}
+		\end{column}
+		\begin{column}{0.45\textwidth}
+		\begin{description}
+			\item[restaurantSeeSelf:] \hfill \\ Restaurant can only see themselves 
+			\item[restaurantSeeOrders:] \hfill \\ Restaurant can only see orders placed at their pizzaOutlet
+		\end{description}	
+	\end{column}
+	\end{columns}	
+\end{frame}
+
+
+\begin{frame}{Rules}{ACL - Restaurant}
+	\begin{columns}[T]
+		\begin{column}{0.40\textwidth}
+			\lstinputlisting[language=acl,firstline=63,firstnumber=63,lastline=84]{p2/permissions.acl}
+		\end{column}
+		\begin{column}{0.55\textwidth}
+		\begin{description}
+			\item[restaurantReadsCustomer:] \hfill \\ restaurant can read customer details
+			\item[restaurantPlaceOrder:] \hfill \\ Restaurants cannot place orders, merely read and update the status of them
+			\item[restaurantProcessOrder:] \hfill \\ Restaurants can process orders from status {\tt PLACED} to {\tt PREPARED} using transaction {\tt prepareOrder}
+		\end{description}	
+	\end{column}
+	\end{columns}	
+\end{frame}
+
+
+\begin{frame}{Rules}{ACL - Restaurant}
+	\begin{columns}[T]
+		\begin{column}{0.40\textwidth}
+			\lstinputlisting[language=acl,firstline=85,firstnumber=85,lastline=98]{p2/permissions.acl}
+		\end{column}
+		\begin{column}{0.55\textwidth}
+		\begin{description}
+			\item[restaurantDispatchOrder:] \hfill \\ Restaurant can process orders from status {\tt PREPARED} to {\tt DISPATCHED} using transaction {\tt restaurantDispatchOrder}
+			\item[restaurantDeliverOrder:] \hfill \\ Restaurant can process orders from status {\tt DISPATCHED} to {\tt DELIVERED} using the transaction {\tt restaurantDeliverOrder}
+		\end{description}	
+	\end{column}
+	\end{columns}	
+\end{frame}
+
+\begin{frame}{Transactions}{JS - Place Order}
+	\lstinputlisting[language=JavaScript,firstline=7,firstnumber=7,lastline=24]{p2/lib/script0.js}
+\end{frame}
+
+\begin{frame}{Transactions}{JS - Prepare Order}
+	\lstinputlisting[language=JavaScript,firstline=25,firstnumber=25,lastline=49]{p2/lib/script0.js}
+\end{frame}
+
+\begin{frame}{Transactions}{JS - Dispatch Order}
+	\lstinputlisting[language=JavaScript,firstline=50,firstnumber=50,lastline=74]{p2/lib/script0.js}
+\end{frame}
+
+\begin{frame}{Transactions}{JS - Deliver Order}
+	\lstinputlisting[language=JavaScript,firstline=75,firstnumber=75,lastline=99]{p2/lib/script0.js}
+\end{frame}
+
+
+
+
+
+%\begin{frame}{}
+%	\lstinputlisting[language=,firstline=15,firstnumber=15,lastline=21]{t5/lib/sample.js}
+%\end{frame}
+
+%\begin{frame}{}
+%	\includegraphics[scale=0.45]{gx/.png}
+%\end{frame}
+
+
+%\begin{frame}{}{}
+%	\begin{columns}[T]
+%		\begin{column}{0.44\textwidth}
+%			\lstinputlisting[language=]{}
+%		\end{column}
+%		\begin{column}{0.44\textwidth}
+%		\end{column}
+%	\end{columns}	
+%\end{frame}
+
+%\begin{frame}{}{}
+%	\begin{columns}[T]
+%		\begin{column}{0.50\textwidth}
+%			\lstinputlisting[]{}
+%		\end{column}
+%		\begin{column}{0.45\textwidth}
+%		\begin{description}
+%			\item[:] \hfill \\ 
+%			\item[:] \hfill \\ 
+%		\end{description}	
+%	\end{column}
+%	\end{columns}	
+%\end{frame}
+
+
+%\begin{frame}{Enumerator Types}
+%	\begin{columns}[T]
+%		\begin{column}{0.48\textwidth}
+%			\begin{lstlisting}
+%			\end{lstlisting}
+%		\end{column}
+%		\begin{column}{0.48\textwidth}
+%			{\bf XXX}
+%		\end{column}
+%	\end{columns}	
+%\end{frame}
+%
+%
+
+%\begin{frame}{X}
+%	\begin{columns}[T]
+%		\begin{column}{0.48\textwidth}
+%			\begin{itemize}
+%				\item XXX 
+%			\end{itemize}
+%		\end{column}
+%		\begin{column}{0.48\textwidth}
+%			{\bf XXX}
+%		\end{column}
+%	\end{columns}	
+%\end{frame}
+\begin{frame}[allowframebreaks]{References}
+	\nocite{hyperledger:1,hyperledger:2,hyperledger:gaur2018}
+	\printbibliography
+\end{frame}
+	
+\begin{frame}{Web Resources}
+	\begin{itemize}
+	\item \url{http://hyperledger.org}
+	\item \url{https://nodejs.org}
+	\item \url{https://hyperledger.github.io/composer/latest/api/runtime-factory}
+	\item \url{https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array}
+	\item \url{https://github.com/hyperledger/composer-sample-networks}
+	\item \url{https://hyperledger.github.io/composer/latest/business-network/bnd-create}
+	\end{itemize}
+\end{frame}
+\end{document}
