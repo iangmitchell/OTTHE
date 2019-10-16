@@ -1,0 +1,217 @@
+\documentclass[pdf,table]{beamer}
+\usepackage{graphicx,hyperref,pdfpages}
+\usepackage{tikz}
+\usepackage{textpos}
+\usepackage{longtable}
+\usetikzlibrary{arrows}
+\usetikzlibrary{positioning,chains,fit,shapes,calc}
+\usetikzlibrary{mindmap}
+
+
+
+\usepackage{listings}
+\usepackage{color}
+%\usepackage[table]{xcolor}
+%\usepackage{booktabs}
+
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mys}{
+	backgroundcolor=\color{backcolour},
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	stringstyle=\color{codepurple},
+	numberstyle=\color{codegray},
+	basicstyle=\ttfamily\scriptsize,
+	breakatwhitespace=false,
+	breaklines=true,
+	captionpos=b,
+	keepspaces=true,
+	numbers=left,
+	numbersep=5pt,
+	showspaces=false,
+	showstringspaces=false,
+	showtabs=false,
+	tabsize=2}
+\lstset{style=mys}
+
+
+\tikzset{every matrix/.style={ampersand replacement=\&,column sep=1.75cm,row sep=2cm},
+		BTWMat/.style={ampersand replacement=\&, column sep=0.75cm,row sep=1cm},
+		eulerMat/.style={ampersand replacement=\&,column sep=1.1cm,row sep=2cm},
+		vertexHighlight/.style={circle,fill=red!80,inner sep=.1cm,text=white},
+		vertex/.style={circle,fill=blue!80,inner sep=.1cm,text=white},
+		bank/.style={rectangle,fill=blue!50,inner sep=0.1cm,text=black!80}
+		edge/.style={--,line width=2pt},
+		Dedge/.style={->,line width=2pt},
+		DedgeT/.style={->,line width=1pt},
+		BiEdge/.style={<->,line width=2pt},
+		BiEdgeT/.style={BiEdge,line width=1pt},
+		edgeHighlight/.style={--,line width=2pt,color=red},
+		loop/.style={min distance=10mm, line width=2pt},
+		loopT/.style={min distance=-10mm, line width=1pt},
+		label/.style = { rectangle, rounded corners, draw,
+		                 minimum width = 2em, fill = yellow!50,
+		                 text = red, font = \tiny\bfseries },
+		labelT/.style = { circle, draw, line width=1pt,
+		                 minimum width = 1em, fill = yellow!50,
+		                 text = red, font = \tiny\bfseries },
+		every node/.style={align=center}}
+
+
+
+\mode<presentation>{
+\usetheme{Madrid}
+\usecolortheme{beaver}
+}
+
+
+
+
+\input{definitions}
+
+\newcommand{\theweek}{1}
+\renewcommand{\theequation}{\theweek.\arabic{equation}}
+
+\title[\moduleCode:L\theweek]{\moduleTitle \\ Week: \theweek \\ Title: Blockchain} 
+
+%[\includegraphics[scale=0.2]{../logo/mdxSmall}]
+\institute[]{\includegraphics[scale=0.25]{../../../logo/mdxSmall} \\ Middlesex University, \\Dept. of Computer Science, \\London}
+\author[\email]{\moduleLeader}
+\date{\today}
+
+
+
+
+\begin{document}
+	\begin{frame}
+		\titlepage
+	\end{frame}
+
+
+\addtobeamertemplate{frametitle}{}{%
+\begin{textblock*}{100mm}(.94\textwidth,-0.85cm)
+\includegraphics[scale=0.1]{../../../logo/transparent}
+\end{textblock*}}
+
+	\begin{frame}{Module Aims}
+		\begin{block}{Aims}
+			Since 2008 blockchain software development has dominated innovation in technology. 
+			Permissionless blockchain is the idea of decentralisation and trusting each node in the network via a combination of consensus
+			and cryptography algorithms. The module will investigate the programming languages that are required to implement blockchain.
+
+			Student will be able to demonstrate theory of blockchain technology.
+			Provide knowledge, via practice, to implement a permissioned blockchain. 
+		\end{block}
+	\end{frame}
+
+	\begin{frame}{Module Objectives}
+		\begin{block}{Knowledge}
+			\begin{itemize}
+				\item Implement Blockchain
+				\item Limitations of Blockchain
+				\item Theoretical aspects of permission and permissionless blockchain
+				\item Decentralised programming aspects
+				\item Server-side scripting
+				\item Data structures and programming necessary to implement blockchain
+			\end{itemize}	
+		\end{block}
+	\end{frame}
+
+	\begin{frame}{Aims \& Objectives}
+		\begin{itemize}
+			\item Introduction to private Blockchain
+			\item Permission Blockchain
+			\item centralised vs decentralised
+			\item distributed
+			\item Consensus
+			\item Collaboration
+			\item Security
+		\end{itemize}
+	\end{frame}	
+
+%\begin{frame}{Enumerator Types}
+%	\begin{columns}[T]
+%		\begin{column}{0.48\textwidth}
+%			\begin{lstlisting}
+%			\end{lstlisting}
+%		\end{column}
+%		\begin{column}{0.48\textwidth}
+%			{\bf XXX}
+%		\end{column}
+%	\end{columns}	
+%\end{frame}
+%
+%
+
+%\begin{frame}{X}
+%	\begin{columns}[T]
+%		\begin{column}{0.48\textwidth}
+%			\begin{itemize}
+%				\item XXX 
+%			\end{itemize}
+%		\end{column}
+%		\begin{column}{0.48\textwidth}
+%			{\bf XXX}
+%		\end{column}
+%	\end{columns}	
+%\end{frame}
+
+%hyperledger architecture paper 1
+\begin{frame}{Hyperledger Architecture \cite{hyperledger:1}}
+\begin{itemize}
+	\item Consensus 
+	\item Smart Contract 
+	\item Communication
+	\item Data Store
+	\item Cryptography
+	\item Policy
+	\item Identity
+	\item API
+	\item Interoperation
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Hyperledger Architecture \cite{hyperledger:1}}
+	{\bf Consensus}
+\begin{itemize}
+	\item Verify the correctness of the set of transactions
+	\item A block is composed of multiple transactions
+	\item Concur with other nodes
+	\item Which of these can be trusted?
+	\item Also provides some ordering.
+	\item Consensus algorithm:
+		\begin{itemize} \pause
+			\item Confirms the correctness of transactions in a block, according to the consensus algorithms deployed and the policies applied.
+			\item Once the block is confirmed, then it enters the blockchain, so consensus algorithm has to agree on order the blocks are added
+			\item Interact and complete smart contract layer 
+		\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+
+
+
+\begin{frame}{Data}
+\end{frame}
+
+
+\begin{frame}{References}
+    \bibliographystyle{amsalpha}
+	\nocite{hyperledger:gaur2018,ferraiolo2001proposed}          
+    \bibliography{../Blockchain/forensic2}	
+\end{frame}
+	
+\begin{frame}
+	\frametitle{Web Resources}
+	\begin{itemize}
+	\item \url{http://hyperledger.org}
+	\end{itemize}
+\end{frame}
+
+\end{document}
