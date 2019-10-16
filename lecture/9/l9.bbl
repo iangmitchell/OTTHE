@@ -1,0 +1,214 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{bashir2018}{book}{}
+      \name{author}{1}{}{%
+        {{hash=ffbcec82817fb5a6264623c2669d6f44}{%
+           family={Bashir},
+           familyi={B\bibinitperiod},
+           given={Imran},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Packt}%
+      }
+      \strng{namehash}{ffbcec82817fb5a6264623c2669d6f44}
+      \strng{fullhash}{ffbcec82817fb5a6264623c2669d6f44}
+      \strng{bibnamehash}{ffbcec82817fb5a6264623c2669d6f44}
+      \strng{authorbibnamehash}{ffbcec82817fb5a6264623c2669d6f44}
+      \strng{authornamehash}{ffbcec82817fb5a6264623c2669d6f44}
+      \strng{authorfullhash}{ffbcec82817fb5a6264623c2669d6f44}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{isbn}{9781788839044}
+      \field{title}{Mastering Blockchain}
+      \field{year}{2018}
+    \endentry
+    \entry{clack2016asmart}{article}{}
+      \name{author}{3}{}{%
+        {{hash=069b91e6b43d4797188941e3cb195ede}{%
+           family={Clack},
+           familyi={C\bibinitperiod},
+           given={Christopher\bibnamedelima D},
+           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=065013ac6e4ebefa385814dc6956889c}{%
+           family={Bakshi},
+           familyi={B\bibinitperiod},
+           given={Vikram\bibnamedelima A},
+           giveni={V\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=3b0565a70827698b5529f83d1565f35d}{%
+           family={Braine},
+           familyi={B\bibinitperiod},
+           given={Lee},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{a9d0284f0ef77117f3dd7b73ebc1c955}
+      \strng{fullhash}{a9d0284f0ef77117f3dd7b73ebc1c955}
+      \strng{bibnamehash}{a9d0284f0ef77117f3dd7b73ebc1c955}
+      \strng{authorbibnamehash}{a9d0284f0ef77117f3dd7b73ebc1c955}
+      \strng{authornamehash}{a9d0284f0ef77117f3dd7b73ebc1c955}
+      \strng{authorfullhash}{a9d0284f0ef77117f3dd7b73ebc1c955}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1612.04496}
+      \field{title}{Smart Contract Templates: essential requirements and design options}
+      \field{year}{2016}
+    \endentry
+    \entry{clack2016smart}{article}{}
+      \name{author}{3}{}{%
+        {{hash=069b91e6b43d4797188941e3cb195ede}{%
+           family={Clack},
+           familyi={C\bibinitperiod},
+           given={Christopher\bibnamedelima D},
+           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=065013ac6e4ebefa385814dc6956889c}{%
+           family={Bakshi},
+           familyi={B\bibinitperiod},
+           given={Vikram\bibnamedelima A},
+           giveni={V\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=3b0565a70827698b5529f83d1565f35d}{%
+           family={Braine},
+           familyi={B\bibinitperiod},
+           given={Lee},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{a9d0284f0ef77117f3dd7b73ebc1c955}
+      \strng{fullhash}{a9d0284f0ef77117f3dd7b73ebc1c955}
+      \strng{bibnamehash}{a9d0284f0ef77117f3dd7b73ebc1c955}
+      \strng{authorbibnamehash}{a9d0284f0ef77117f3dd7b73ebc1c955}
+      \strng{authornamehash}{a9d0284f0ef77117f3dd7b73ebc1c955}
+      \strng{authorfullhash}{a9d0284f0ef77117f3dd7b73ebc1c955}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1608.00771}
+      \field{title}{Smart contract templates: foundations, design landscape and research directions}
+      \field{year}{2016}
+    \endentry
+    \entry{grigg2015ricardian}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=21c32c54313bb08944e77a8fcac7e22b}{%
+           family={Grigg},
+           familyi={G\bibinitperiod},
+           given={I},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{21c32c54313bb08944e77a8fcac7e22b}
+      \strng{fullhash}{21c32c54313bb08944e77a8fcac7e22b}
+      \strng{bibnamehash}{21c32c54313bb08944e77a8fcac7e22b}
+      \strng{authorbibnamehash}{21c32c54313bb08944e77a8fcac7e22b}
+      \strng{authornamehash}{21c32c54313bb08944e77a8fcac7e22b}
+      \strng{authorfullhash}{21c32c54313bb08944e77a8fcac7e22b}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://iang.org/papers/intersection_ricardian_smart.html}}
+      \field{note}{[Accessed: Aug 2019]}
+      \field{title}{On the intersection of Ricardian and Smart Contracts}
+    \endentry
+    \entry{grigg2004ricardian}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=21c32c54313bb08944e77a8fcac7e22b}{%
+           family={Grigg},
+           familyi={G\bibinitperiod},
+           given={I},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{21c32c54313bb08944e77a8fcac7e22b}
+      \strng{fullhash}{21c32c54313bb08944e77a8fcac7e22b}
+      \strng{bibnamehash}{21c32c54313bb08944e77a8fcac7e22b}
+      \strng{authorbibnamehash}{21c32c54313bb08944e77a8fcac7e22b}
+      \strng{authornamehash}{21c32c54313bb08944e77a8fcac7e22b}
+      \strng{authorfullhash}{21c32c54313bb08944e77a8fcac7e22b}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings. First IEEE International Workshop on Electronic Contracting, 2004.}
+      \field{title}{The ricardian contract}
+      \field{year}{2004}
+      \field{pages}{25\bibrangedash 31}
+      \range{pages}{7}
+    \endentry
+    \entry{collinsDictionary}{book}{}
+      \name{editor}{1}{}{%
+        {{hash=b7d5e7dd5262c9facc266e5c2d4984a9}{%
+           family={Hanks},
+           familyi={H\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Collins}%
+      }
+      \strng{namehash}{b7d5e7dd5262c9facc266e5c2d4984a9}
+      \strng{fullhash}{b7d5e7dd5262c9facc266e5c2d4984a9}
+      \strng{bibnamehash}{b7d5e7dd5262c9facc266e5c2d4984a9}
+      \strng{editorbibnamehash}{b7d5e7dd5262c9facc266e5c2d4984a9}
+      \strng{editornamehash}{b7d5e7dd5262c9facc266e5c2d4984a9}
+      \strng{editorfullhash}{b7d5e7dd5262c9facc266e5c2d4984a9}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{isbn}{0004331346}
+      \field{title}{Collins Dictionary of English Language}
+      \field{year}{1986}
+    \endentry
+    \entry{szabo1997formalizing}{article}{}
+      \name{author}{1}{}{%
+        {{hash=7a8fa37f931a316fe587067d55ea90fb}{%
+           family={Szabo},
+           familyi={S\bibinitperiod},
+           given={Nick},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{7a8fa37f931a316fe587067d55ea90fb}
+      \strng{fullhash}{7a8fa37f931a316fe587067d55ea90fb}
+      \strng{bibnamehash}{7a8fa37f931a316fe587067d55ea90fb}
+      \strng{authorbibnamehash}{7a8fa37f931a316fe587067d55ea90fb}
+      \strng{authornamehash}{7a8fa37f931a316fe587067d55ea90fb}
+      \strng{authorfullhash}{7a8fa37f931a316fe587067d55ea90fb}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{First Monday}
+      \field{number}{9}
+      \field{title}{Formalizing and securing relationships on public networks}
+      \field{volume}{2}
+      \field{year}{1997}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
