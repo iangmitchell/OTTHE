@@ -1,0 +1,69 @@
+/*
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+rule medicationAccess {
+  description:    "only qualified personnel can prescribe medication"
+  participant:    "org.bmars.net.GP"
+  operation:      ALL
+  resource:       "org.bmars.net.Medication"
+  action:         ALLOW  
+}
+
+rule SUAccess {
+  description: "Access to service users by staff"
+  participant: "org.bmars.net.MedAdm"
+  operation:    READ
+  resource: "org.bmars.net.SU"
+  action: ALLOW
+}
+
+rule SUUpdate{
+  description: "Updates to service users by staff"
+  participant(p): "org.bmars.net.MedAdm"
+  operation:  READ,UPDATE 
+  resource(r): "org.bmars.net.SU"
+  condition:  (r.KeyWorker.getIdentifier()===p.getIdentifier())
+  action: ALLOW
+}
+
+rule SUManage{
+  description:  "Updates by manager"
+  participant:  "org.bmars.net.Manager"
+  operation:    ALL 
+  resource: "org.bmars.net.SU"
+  action: ALLOW
+}
+
+rule auditor {
+  description: "auditor views all"
+  participant: "org.bmars.net.Auditor"
+  operation: READ 
+  resource: "org.bmars.net.*"
+  action: ALLOW
+}
+
+rule NetworkAdminUser {
+    description: "Grant business network administrators full access to user resources"
+    participant: "org.hyperledger.composer.system.NetworkAdmin"
+    operation: ALL
+    resource: "**"
+    action: ALLOW
+}
+
+rule NetworkAdminSystem {
+    description: "Grant business network administrators full access to system resources"
+    participant: "org.hyperledger.composer.system.NetworkAdmin"
+    operation: ALL
+    resource: "org.hyperledger.composer.system.**"
+    action: ALLOW
+}

@@ -1,0 +1,129 @@
+\documentclass[pdf,table]{beamer}
+\usepackage{graphicx,hyperref,pdfpages}
+\usepackage{tikz}
+\usepackage{textpos}
+\usepackage{longtable}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{listings}
+\usepackage{color}
+\usepackage[style=numeric,backend=biber]{biblatex}
+%
+\usetikzlibrary{arrows}
+\usetikzlibrary{positioning,chains,fit,shapes,calc}
+\usetikzlibrary{mindmap}
+\usetikzlibrary{shapes.multipart}
+%
+\addbibresource{../CST4025.bib}
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+%
+\input{../lst}
+\input{../tikset}
+\input{../../definitions}
+%
+\mode<presentation>{
+\usetheme{Madrid}
+\usecolortheme{beaver}
+}
+%
+\newcommand{\theweek}{4}
+\renewcommand{\theequation}{\theweek.\arabic{equation}}
+
+\title[\moduleCode:L\theweek]{\moduleTitle \\ Week: \theweek \\ Title: Formative Feedback} 
+\institute[]{\includegraphics[scale=0.25]{../../../logo/mdxSmall} \\ Middlesex University, \\Dept. of Computer Science, \\London}
+\author[\email]{\moduleLeader}
+\date{\today}
+
+
+
+
+\begin{document}
+	\begin{frame}
+		\titlepage
+	\end{frame}
+
+
+\addtobeamertemplate{frametitle}{}{%
+\begin{textblock*}{100mm}(.94\textwidth,-0.85cm)
+\includegraphics[scale=0.1]{../../../logo/transparent}
+\end{textblock*}}
+
+	\begin{frame}{Lecture Aims}
+		\begin{block}{Aims}
+			The aims are to provide you with formative feedback to help you improve your submission the following week
+		\end{block}
+		\begin{block}{Structure}
+			There is no structure to today's lecture or lab. It is a formative feedback week and provides an opportunity to provide generic feedback to improve your submission of coursework 1
+		\end{block}
+			
+	\end{frame}
+
+	\begin{frame}{Lecture Objectives}
+		\begin{block}{Knowledge}
+			\begin{itemize}
+				\item Formative Feedback 
+				\item Participants
+				\item Assets
+				\item Transactions
+				\item Concepts
+				\item Enumerators
+				\item Coursework weightings
+			\end{itemize}	
+		\end{block}
+\end{frame}
+
+
+\begin{frame}{Module Structure}
+\begin{table}[tbh!]
+\begin{tabular}{ l l}
+Week & Title \\ \hline
+ 1 & Introduction to Blockchain\\
+ 2 & Composer: Data Modelling\\
+ 3 & Composer: Access Control Language\\
+ 4 & Formative Feedback \\
+ 5 & Asynchronous Programming \& Promises \\ 
+ 6 & Composer: Node.js I \\  
+ 7 & Composer: Node.js II\\ 
+ 8 & Consensus Engineering\\
+ 9 & Smart Contracts\\
+ 10 & Feedback\\
+ 11 & Feedback\\
+ 12 &  Presentation\\
+ \end{tabular}
+	\caption{Lecture Plan, these are indicative titles }\label{ta:lp}
+\end{table}
+\end{frame}
+
+
+\begin{frame}{Coursework Weighting}
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|} \hline
+Assessment 	& Formative Feedback 	& Deadline 				& \% \\ \hline\hline
+Coursework 1		& Week 4\---5 	& \cwideadline 	& 25 \\ \hline
+Coursework 2		& Week 12	& \cwiideadline & 75 \\ \hline
+Deferred Coursework 1  & N/A & \deferraldeadline & 25\\ \hline
+Deferred Coursework 2  & N/A   & \deferraldeadline & 75\\ \hline
+Resit Coursework 1 & N/A & \resitdeadline & 25\\ \hline
+Resit Coursework 2 & N/A & \resitdeadline & 75\\ \hline
+\end{tabular}
+\caption{In-course Assignments for \moduleCode}\label{ta:cw}
+\end{table}
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{Coursework Spec.}
+	\input{../../hb/cw1}
+\end{frame}
+
+\begin{frame}{References}
+	\printbibliography
+\end{frame}
+	
+\begin{frame}
+	\frametitle{Web Resources}
+	\begin{itemize}
+	\item \url{http://hyperledger.org}
+	\end{itemize}
+\end{frame}
+
+\end{document}

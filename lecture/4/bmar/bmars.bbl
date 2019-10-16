@@ -1,0 +1,166 @@
+\begin{thebibliography}{10}
+
+\bibitem{hyperledger:1}
+Hyperledger architecture, volume 1.
+\newblock
+  \url{https://www.hyperledger.org/wp-content/uploads/2017/08/HyperLedger_Arch_WG_Paper_1_Consensus.pdf},
+  2017.
+\newblock [Accessed: Jul. 2018].
+
+\bibitem{hyperledger:2}
+Hyperledger architecture, volume 2.
+\newblock
+  \url{https://www.hyperledger.org/wp-content/uploads/2018/04/Hyperledger_Arch_WG_Paper_2_SmartContracts.pdf},
+  2018.
+\newblock [Accessed: Jul. 2018].
+
+\bibitem{adler2011survey}
+Julia Adler-Milstein, David~W Bates, and Ashish~K Jha.
+\newblock A survey of health information exchange organizations in the united
+  states: implications for meaningful use.
+\newblock {\em Annals of internal medicine}, 154(10):666--671, 2011.
+
+\bibitem{androulaki2018hyperledger}
+Elli Androulaki, Artem Barger, Vita Bortnikov, Christian Cachin, Konstantinos
+  Christidis, Angelo De~Caro, David Enyeart, Christopher Ferris, Gennady
+  Laventman, Yacov Manevich, et~al.
+\newblock Hyperledger fabric: a distributed operating system for permissioned
+  blockchains.
+\newblock In {\em Proceedings of the Thirteenth EuroSys Conference}, page~30.
+  ACM, 2018.
+
+\bibitem{azaria2016medrec}
+Asaph Azaria, Ariel Ekblaw, Thiago Vieira, and Andrew Lippman.
+\newblock Medrec: Using blockchain for medical data access and permission
+  management.
+\newblock In {\em Open and Big Data (OBD), International Conference on}, pages
+  25--30. IEEE, 2016.
+
+\bibitem{bastiaan2015preventing}
+Martijn Bastiaan.
+\newblock Preventing the 51\%-attack: a stochastic analysis of two phase proof
+  of work in bitcoin.
+\newblock In {\em Available at http://referaat. cs. utwente.
+  nl/conference/22/paper/7473/preventingthe-51-attack-astochastic-analysis-of-two-phase-proof-of-work-in-bitcoin.
+  pdf}, 2015.
+
+\bibitem{bates1998effect}
+David~W Bates, Lucian~L Leape, David~J Cullen, Nan Laird, Laura~A Petersen,
+  Jonathan~M Teich, Elizabeth Burdick, Mairead Hickey, Sharon Kleefield, Brian
+  Shea, et~al.
+\newblock Effect of computerized physician order entry and a team intervention
+  on prevention of serious medication errors.
+\newblock {\em Jama}, 280(15):1311--1316, 1998.
+
+\bibitem{bennett2003computerised}
+John~W Bennett, Paul~P Glasziou, et~al.
+\newblock Computerised reminders and feedback in medication management: a
+  systematic review of randomised controlled trials.
+\newblock {\em Medical Journal of Australia}, 178(5):217--222, 2003.
+
+\bibitem{bui2018cacm}
+Q.~Bui, S.~Hansen, M.~Liu, and Q.~Tu.
+\newblock The productivity paradox in health information technology.
+\newblock {\em Communications of the {ACM}}, 61(10):78--85, 2018.
+
+\bibitem{cachin2016architecture}
+Christian Cachin.
+\newblock Architecture of the hyperledger blockchain fabric.
+\newblock In {\em Workshop on Distributed Cryptocurrencies and Consensus
+  Ledgers}, volume 310, 2016.
+
+\bibitem{caldicott:2013}
+F~Caldicott.
+\newblock Information: To share or not to share? the information governance
+  review.
+\newblock Dept. of Health, UK, March 2013.
+
+\bibitem{castro1999practical}
+Miguel Castro, Barbara Liskov, et~al.
+\newblock Practical byzantine fault tolerance.
+\newblock In {\em OSDI}, volume~99, pages 173--186, 1999.
+
+\bibitem{eu-2016-679}
+{Council of European Union}.
+\newblock Council regulation {(EU)} no 2016/679.
+\newblock
+  \url{http://eur-lex.europa.eu/legal-content/en/LSU/?uri=CELEX\%3A32016R0679},
+  2018.
+\newblock [Accessed July 2018].
+
+\bibitem{de2013unique}
+Yves-Alexandre De~Montjoye, C{\'e}sar~A Hidalgo, Michel Verleysen, and
+  Vincent~D Blondel.
+\newblock Unique in the crowd: The privacy bounds of human mobility.
+\newblock {\em Scientific reports}, 3:1376, 2013.
+
+\bibitem{hyperledger:gaur2018}
+Nitin Gaur, Luc Desrosiers, Petr Novotny, Venkatraman Ramakrishna, Anthony
+  O'Dowd, and Salman~A. Baset.
+\newblock {\em Hands-on Blockchain with Hyperledger: Building Decentralised
+  Applications with Hyperledger Fabric and Composer}.
+\newblock Packt, 2018.
+
+\bibitem{griggs2018healthcare}
+Kristen~N Griggs, Olya Ossipova, Christopher~P Kohlios, Alessandro~N Baccarini,
+  Emily~A Howson, and Thaier Hayajneh.
+\newblock Healthcare blockchain system using smart contracts for secure
+  automated remote patient monitoring.
+\newblock {\em Journal of medical systems}, 42(7):130, 2018.
+
+\bibitem{gupta:2018}
+R.~Gupta.
+\newblock {\em Hands-On Cybersecurity with Blockchain}.
+\newblock Packt, 2018.
+
+\bibitem{nist:abac2014}
+Vincent~C. Hu, David Ferraiolo, Rick Kuhn, Adam Schnitzer, Kenneth Sandlin,
+  Robert Miller, and Karen Scarfone.
+\newblock Guide to attribute based access control {(ABAC)} definition and
+  considerations.
+\newblock
+  \url{https://nvlpubs.nist.gov/nistpubs/specialpublications/NIST.sp.800-162.pdf},
+  2014.
+\newblock [Accessed: Jul. 2018].
+
+\bibitem{kuhn2010adding}
+D~Richard Kuhn, Edward~J Coyne, and Timothy~R Weil.
+\newblock Adding attributes to role-based access control.
+\newblock {\em Computer}, 43(6):79--81, 2010.
+
+\bibitem{li2005post}
+Yau~Wai LI, Ann Blandford, Paul Cairns, Richard~M Young, et~al.
+\newblock Post-completion errors in problem solving.
+\newblock 2005.
+
+\bibitem{nakamoto2008bitcoin}
+Satoshi Nakamoto.
+\newblock Bitcoin: A peer-to-peer electronic cash system.
+\newblock 2008.
+
+\bibitem{thakkar2018performance}
+Parth Thakkar, Senthil Nathan, and Balaji Vishwanathan.
+\newblock Performance benchmarking and optimizing hyperledger fabric blockchain
+  platform.
+\newblock {\em arXiv preprint arXiv:1805.11390}, 2018.
+
+\bibitem{vithanwattana2017developing}
+Nattaruedee Vithanwattana, Glenford Mapp, and Carlisle George.
+\newblock Developing a comprehensive information security framework for
+  mhealth: a detailed analysis.
+\newblock {\em Journal of Reliable Intelligent Environments}, 3(1):21--39,
+  2017.
+
+\bibitem{zhang2017applying}
+Peng Zhang, Jules White, Douglas~C Schmidt, and Gunther Lenz.
+\newblock Applying software patterns to address interoperability in
+  blockchain-based healthcare apps.
+\newblock {\em arXiv preprint arXiv:1706.03700}, 2017.
+
+\bibitem{zyskind2015decentralizing}
+Guy Zyskind, Oz~Nathan, et~al.
+\newblock Decentralizing privacy: Using blockchain to protect personal data.
+\newblock In {\em Security and Privacy Workshops (SPW), 2015 IEEE}, pages
+  180--184. IEEE, 2015.
+
+\end{thebibliography}

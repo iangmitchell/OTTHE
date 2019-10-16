@@ -1,0 +1,150 @@
+/*
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+namespace org.bmars.net
+/* CONCEPTS */
+concept Address {
+  o String Name optional
+  o String street
+  o String city default ="London"
+  o String country default = "UK"
+  o String postcode
+}
+
+/* ENUMERATOR */
+enum MedicationAdministrationCode {
+  o taken
+  o vomit
+  o refused
+  o sleeping
+  o absent
+}
+
+enum MedicationFormCode{
+  o Pill
+  o Cream
+  o Liquid
+}
+
+enum RouteOfAdministrationCode {
+  o Oral
+  o Topical
+  o Inhalation
+  o Infusion
+  o Instillation
+}
+  
+enum TimeOfAdministration {
+  o AM
+  o NOON
+  o PM
+  o NIGHT
+}
+
+/* PARTICIPANTS */
+participant MedAdm identified by ID{
+  o String ID
+  o String firstName
+  o String lastName
+  o DateTime DoB default="1900-01-01"
+}
+
+participant GP identified by ID{
+  o String ID
+  o String firstName
+  o String lastName
+  o Address Practice
+}
+
+participant Auditor identified by ID{
+  o String ID
+  o String firstName
+  o String lastName
+  o Address Organisation
+}
+
+participant Manager identified by ID{
+  o String ID
+  o String firstName
+  o String lastName
+  o DateTime DoB default="1900-01-01"
+}
+
+participant SU identified by ID{
+  o String ID
+  o String firstName
+  o String lastName
+  o String Allergies
+  o DateTime DoB default="1900-01-01"
+  o MAR MARsheet
+  --> GP Doctor
+  --> MedAdm KeyWorker
+  --> Medication [] prescription 
+  --> HealthCareProviderLocation Home 
+}
+/* ASSETS */
+asset HealthCareProviderLocation identified by ID{
+  o String ID
+  o Address homeAddress
+  --> Manager owner
+}
+asset Medication identified by ID{
+  o String ID                         // code for medication
+  o String name                       // name of medication 
+  o DateTime initialisation           // initial date the drug was first administered
+  o MedicationFormCode Form           // The form the mecidation comes in, e.g., tablet 
+  o RouteOfAdministrationCode Route   // route of administration
+  o Boolean Controlled                // controlled drug, that requires a witness
+  o String Duration                  // duration for the prescribed drug, in weeks
+  o String Dosage                    // the amount in milligrams 
+  o Integer Amount                    // the number of tablets to be taken, e.g. two tablets
+  o Integer Hours optional            // if to be taken every 1, 2, 3 hours optional
+  //o String Frequency                  // the frequency of the medication to be taken, e.g. twice daily
+  o Boolean [] Frequency				// array of T/F, true indicates taken, index indicates when. 
+  o String Instructions               // Instructions, eg. after a meal
+}
+
+concept MAR{ // this is a duplicate of the blockchain, but a one off storage. Only the latest is stored in the registry
+  o MedAdm Nurse
+  o TimeOfAdministration [] time
+  o Medication [] actualMed
+  o MedicationAdministrationCode [] MAC 
+}
+
+transaction Administer {
+  --> SU Patient
+  o TimeOfAdministration time
+  --> Medication [] actualMed
+  o MedicationAdministrationCode [] MAC
+}
+
+transaction Observe {
+  --> SU Patient
+  o MedicationAdministrationCode administered
+}
+
+transaction Prescribe {
+  --> SU Patient
+	o Medication [] prescription 
+}
+
+transaction RegisterSU {
+  --> SU Patient
+  --> HealthCareProviderLocation Home
+}
+
+transaction assignKeyWorker{
+  --> MedAdm newKeyWorker 
+  --> SU Patient
+}
