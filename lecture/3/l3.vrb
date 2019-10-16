@@ -1,0 +1,24 @@
+\frametitle{Rule}\framesubtitle {Traders To Submit Transactions}
+	\begin{columns}[T]
+		\begin{column}{0.48\textwidth}
+			\begin{itemize}
+				\item allow access to transaction, trade
+				\item participant: trader
+				\item resource: trade (transaction)
+				\item condition: none
+				\item action: allow
+				\item operation: all
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.48\textwidth}
+			\begin{lstlisting}[language=ACL]
+rule traderToSubmitTX{
+	description:"Enable Traders to trade, submit transactions"
+	participant:"org.example.trader.Trader"
+	operation:ALL
+	resource:"org.example.trader.Trade"
+	action: ALLOW
+	}
+			\end{lstlisting}
+		\end{column}
+	\end{columns}

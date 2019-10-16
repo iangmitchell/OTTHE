@@ -1,0 +1,55 @@
+
+\section{Linux}
+If using another operating system create a virtual machine with Ubuntu. If you are already using Linux then you should not need to do anything. Much of what we do will be based on Ubuntu 18.04 LTS (64 bit).
+
+Create a directory CST4025 and a subdirectory \theweek. Save all your work in this directory. 
+
+
+\section{CTO - Trader Example - MyFirstBlockchain}
+The trader example is available at: \\
+\url{https://hyperledger.github.io/composer/latest/tutorials/developer-tutorial.html}
+
+Open up a new tab in Firefox browser and go to the following URL:\\
+\url{https://composer-playground.mybluemix.net/login}
+
+Then start a new blockchain example.
+
+\subsection{Trader Assets} 
+The trader example is a simple description of an asset changing ownership via a transaction. Complete the access control tutorial at: \\
+\url{https://hyperledger.github.io/composer/v0.19/tutorials/acl-trading.html}
+
+
+\section{Car Owner}
+Use the car owner CTO you used from last week. The CTO should include:
+\begin{itemize}
+	\item Paticipant: individual, name, id, address
+	\item Asset: car, reg, make, model, and a relationship of owner (an individual who owns the car)
+	\item Transaction: should facilitate the change of ownerships between different individuals
+\end{itemize}
+%Your ACL should allow the following:
+%\begin{itemize}
+%	\item Owner can only see themselves
+%	\item Owner can only sell a car
+%	\item Owner can make transaction
+%	\item Admin sees all
+%\end{itemize}
+Write a list of at least three rules, list these rules then write the associate ACL.
+
+
+\section{Bank}
+Before designing the data model for the bank and line-of-credit model. Look at some of the other examples available on hyperledger composer. Finally, look at the model carefully and design a CTO for the bank and line-of-credit example we discussed in the lecture.
+\begin{figure}\label{fi:traderCTO}
+	\lstinputlisting[language=CTO]{trader-/models/trading.cto}
+	\caption{Trader Code for CTO, taken from Hyperledger website}
+\end{figure}
+
+
+\section{Coursework}
+You need to think of a blockchain application. None of the examples on hyperledger, or in the series of tutorials, is permitted. Your idea needs to be original and fairly complex, to reflect the complications we experience from day to day. If you have an idea discuss this with your tutor and start to think of the data model exercise. 
+
+\subsection{ACL for coursework}
+Continue with your development of the CTO for your application. Start thinking of the access control required when writing the CTO, use comments to remind yourself about how to restrict access. Finally, to get ahead, start to write the rule descriptions for the ACL.
+
+\subsection{Preparation for Formative Feedback next week}
+For next week bring along your CTO file and \moduleLeader will give you some feedback for your submission the following week.
+

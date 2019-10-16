@@ -1,0 +1,174 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{ferraiolo2001proposed}{article}{}
+      \name{author}{5}{}{%
+        {{hash=e631513393668b5849d08b49e77fad8f}{%
+           family={Ferraiolo},
+           familyi={F\bibinitperiod},
+           given={David\bibnamedelima F},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=8b394aa6b9c019f6acb8ef107c588d70}{%
+           family={Sandhu},
+           familyi={S\bibinitperiod},
+           given={Ravi},
+           giveni={R\bibinitperiod}}}%
+        {{hash=a1ecd582a19d674cff3afbd565799300}{%
+           family={Gavrila},
+           familyi={G\bibinitperiod},
+           given={Serban},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a0db02622b56c8ee1bde4fe90e2c70b9}{%
+           family={Kuhn},
+           familyi={K\bibinitperiod},
+           given={D\bibnamedelima Richard},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=b688e7f8be66fbaeae7c3bb165cc1a47}{%
+           family={Chandramouli},
+           familyi={C\bibinitperiod},
+           given={Ramaswamy},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{6dcbd1ce587b3a59674810a3762eb00d}
+      \strng{fullhash}{d54a9a91e57642c398cc853d97a65efd}
+      \strng{bibnamehash}{6dcbd1ce587b3a59674810a3762eb00d}
+      \strng{authorbibnamehash}{6dcbd1ce587b3a59674810a3762eb00d}
+      \strng{authornamehash}{6dcbd1ce587b3a59674810a3762eb00d}
+      \strng{authorfullhash}{d54a9a91e57642c398cc853d97a65efd}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{ACM Transactions on Information and System Security (TISSEC)}}
+      \field{number}{3}
+      \field{title}{Proposed {NIST} standard for role-based access control}
+      \field{volume}{4}
+      \field{year}{2001}
+      \field{pages}{224\bibrangedash 274}
+      \range{pages}{51}
+    \endentry
+    \entry{huABAC}{article}{}
+      \name{author}{7}{}{%
+        {{hash=3ecb83f5bea239ef7d6ad5d205d60711}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Vincent\bibnamedelima C.},
+           giveni={V\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=35aedb704edc386c5cf58726c3d2833a}{%
+           family={Ferraiolo},
+           familyi={F\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=fbe58cf7fa55ebb352e9db3813f42842}{%
+           family={Kuhn},
+           familyi={K\bibinitperiod},
+           given={Rick},
+           giveni={R\bibinitperiod}}}%
+        {{hash=af70a52d7d5e6c8a5adcd268ffd8263a}{%
+           family={Schitzer},
+           familyi={S\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod}}}%
+        {{hash=568b6d50a5d52d693b4747afbb4f3cfb}{%
+           family={Sandlin},
+           familyi={S\bibinitperiod},
+           given={Kenneth},
+           giveni={K\bibinitperiod}}}%
+        {{hash=6e9ebbefbdc40e0ed98cbb49db36cb59}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=6ea98e3682d33480471e822adaacdc41}{%
+           family={Scarfone},
+           familyi={S\bibinitperiod},
+           given={Karen},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Washington D.C.}%
+      }
+      \list{publisher}{1}{%
+        {NIST, US Dept of Commerce}%
+      }
+      \strng{namehash}{540403843dc696e70e234778af7cb343}
+      \strng{fullhash}{c3194391adecaa9c5db5356d432a3a2c}
+      \strng{bibnamehash}{540403843dc696e70e234778af7cb343}
+      \strng{authorbibnamehash}{540403843dc696e70e234778af7cb343}
+      \strng{authornamehash}{540403843dc696e70e234778af7cb343}
+      \strng{authorfullhash}{c3194391adecaa9c5db5356d432a3a2c}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Computer Security}
+      \field{title}{Guide to Attribute Based Access Control {(ABAC)} Definition and Considerations}
+      \field{volume}{SP 800-162}
+      \field{year}{2014}
+    \endentry
+    \entry{mitchell:2019a}{article}{}
+      \name{author}{2}{}{%
+        {{hash=8b25fdd848cc39ef4082380703658120}{%
+           family={Mitchell},
+           familyi={M\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=34f8699d468d616d0e7ac43817709f69}{%
+           family={Hara},
+           familyi={H\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=bbb4c08196c6a6ddc19ce8b8c97b44c2}{%
+           family={Jahankhani},
+           familyi={J\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{1e4a9b9cfcb329cc61e180515e81ad09}
+      \strng{fullhash}{1e4a9b9cfcb329cc61e180515e81ad09}
+      \strng{bibnamehash}{1e4a9b9cfcb329cc61e180515e81ad09}
+      \strng{authorbibnamehash}{1e4a9b9cfcb329cc61e180515e81ad09}
+      \strng{authornamehash}{1e4a9b9cfcb329cc61e180515e81ad09}
+      \strng{authorfullhash}{1e4a9b9cfcb329cc61e180515e81ad09}
+      \strng{editorbibnamehash}{bbb4c08196c6a6ddc19ce8b8c97b44c2}
+      \strng{editornamehash}{bbb4c08196c6a6ddc19ce8b8c97b44c2}
+      \strng{editorfullhash}{bbb4c08196c6a6ddc19ce8b8c97b44c2}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Blockchain and Clinical Trial - Securing Patient Data}
+      \field{series}{Advanced Sciences and Technologies for Security Applications}
+      \field{title}{{BMAR} - blockchain for medication administration records}
+      \field{year}{2019}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
