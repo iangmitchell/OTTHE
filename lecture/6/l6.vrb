@@ -1,0 +1,34 @@
+\frametitle{Traders Comparison?}
+\begin{columns}[T]
+		\begin{column}{0.40\textwidth}
+			{\bf Traders}
+			\begin{lstlisting}[language=json]
+{
+  "$class": "org.t4.net.Trader",
+  "tradeId": "0816",
+  "firstName": "",
+  "lastName": ""
+}
+{
+  "$class": "org.t4.net.Trader",
+  "tradeId": "2490",
+  "firstName": "",
+  "lastName": ""
+}
+			\end{lstlisting}
+		\end{column}
+
+		\begin{column}{0.58\textwidth}
+			{\bf Commodity}
+			\begin{lstlisting}[language=json]
+{
+  "$class": "org.t4.net.Commodity",
+  "tradingSymbol": "7058",
+  "description": "",
+  "quantity": 10,
+  "owner": "resource:org.t4.net.Trader#5800"
+}
+			\end{lstlisting}
+
+		\end{column}
+	\end{columns}
