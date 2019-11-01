@@ -4,15 +4,20 @@ There are definition files in the root directory.
 There are bibliographies.
 
 There are many things to do:
- - move logo to folder
+ - move logo to folder - complete
+ - added slide.py to parse a single slide. python slide.py -w 3, will parse 3/l3.tex; requires some further work. 
+	i) to complete all slides; 
+	ii) to parse slides in  a range, say week 4--8; 
+	iii) parse slides in non-contiguous ranges, say week 1,4 and 7; and, 
+	iv) update tar ball
  - change files to incorporate new logo position above
  - get code compiled and create pdf from a single file, written in python or bash?
  - bash will restrict access to linux distros, likely to be python
  - consider ninja & python combination
  - create fork, called 4025, of output only; show pdf files - make this public
- - create zip file to put in 4025 - zip includes only pdf
+ - create zip file to put in 4025 - zip includes only pdf 
  - generate further script to more than one module
- - think of dates/ module runs/ cohorts/ campuses
+ - think of dates/ module runs/ cohorts/ campuses 
  - automate the generation of files and directories for 12 week delivery.
  - create a database to store information about modules
  - generate all material for multiple modules using step above.
@@ -24,7 +29,7 @@ There are many things to do:
  - create script to increase font size and create a separate fork
  - create script to provide slides in 2x3, 1x3, 1x2 formats using pdfjam
 
-
 At the moment the data is just there as an idea of what is required.
 
 Ian Mitchell
+
